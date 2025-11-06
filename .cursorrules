@@ -1,0 +1,52 @@
+# Project Rules for Comet Forward Website
+
+## Project Overview
+This is a corporate website (landing page) for Comet Forward Intelligent Technology Co., Ltd., a robotics manufacturing company.
+
+**Company Description:**
+Founded in 2023, Comet Forward Intelligent Technology Co., Ltd. is committed to the technological R&D and programming of its series of mobile robot products.
+
+Our team boasts over 10 years of research and development experience in the industry, with a focus on the design of intelligent wire-controlled drive robots, intelligent motion control, and independent innovation technologies for indoor and outdoor scenarios.
+
+Our product range covers standard wire-controlled drive new energy vehicle platforms, advanced unmanned robots, intelligent patrol robots, autonomous delivery robots, and unmanned guided vehicles (UGVs) for industrial transportation.
+
+These technologies are widely applied in various fields, such as education, inspection, manufacturing plants, and parking space allocation. We not only provide standard products but also customize independent innovation solutions based on robot operating systems to meet the diverse practical needs of customers.
+
+## Development Rules
+
+### Documentation
+- NEVER create documentation files (README.md, .md, .txt, etc.) after completing a task unless explicitly requested by the user
+- Only create documentation when the user explicitly asks for it
+
+### Frontend Stack
+- Use **React 19** for the frontend framework
+- Use **Ant Design 5.0** for UI components and design system
+- Ensure all components are compatible with React 19 and Ant Design 5.0
+
+### Component Architecture
+- Create reusable components for the frontend
+- Always check for existing components before creating new ones
+- Reuse existing components whenever possible
+- Keep components modular and maintainable
+- Extract frequently used or potentially reusable parameters into separate functions for easy reuse
+
+### Code Quality
+- Break large functions into smaller sub-functions
+- Minimize code comments - only add comments when necessary
+- Never use "workarounds" or temporary fixes - always solve problems properly
+- Always analyze project context before starting a task
+
+### Content and Localization
+- **All website content must be in Russian language**
+- Use i18n keys for all text content on the website to enable potential localization expansion
+- Store all Russian text content in i18n translation files
+- Never hardcode Russian text directly in components - always use i18n keys
+
+### UI Consistency
+- Always study the structure of UI components in the specific project to maintain consistency
+- Follow the existing design patterns and component structure
+
+### Cleanup
+- Remove temporary files and test files after successful completion or use
+- Keep the project clean and organized
+

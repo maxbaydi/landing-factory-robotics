@@ -1,0 +1,104 @@
+.contacts-page {
+  padding-bottom: 100px;
+}
+
+.contacts-header-container {
+  background-color: #050505;
+  border-bottom: 1px solid #222222;
+  padding: 180px 0 80px 0;
+  text-align: center;
+}
+
+.contacts-content {
+  padding-top: 80px;
+}
+
+.contact-item-card {
+  background: #111111 !important;
+  border-radius: 16px;
+  padding: 24px;
+  height: 100%;
+}
+
+.contact-item {
+  text-align: center;
+}
+
+.contact-icon {
+  font-size: 32px;
+  color: #A48BFF;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.contact-title {
+  display: block;
+  color: #A0A0A0;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.contact-content {
+  display: block;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.info-row {
+  margin-top: 48px;
+}
+
+.company-info-card, .map-placeholder {
+  background: #111111 !important;
+  border-radius: 16px;
+  padding: 40px;
+  height: 100%;
+}
+
+.info-title {
+  font-size: 24px !important;
+  font-weight: 600 !important;
+  margin-bottom: 16px !important;
+}
+
+.info-text {
+  color: #A0A0A0;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.map-placeholder {
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.map-icon {
+  font-size: 48px;
+  color: #5A4FF5;
+  margin-bottom: 24px;
+}
+
+.map-title {
+  color: #FFFFFF !important;
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  margin-bottom: 8px !important;
+}
+
+.map-description {
+  color: #A0A0A0;
+  font-size: 16px;
+}
+
+@media (max-width: 992px) {
+  .contacts-header-container {
+    padding: 60px 0;
+  }
+}
+
