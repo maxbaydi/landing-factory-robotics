@@ -11,8 +11,8 @@ const SchemaOrg = ({ type, data }: SchemaOrgProps) => {
           '@context': 'https://schema.org',
           '@type': 'Organization',
           name: data.name || '[Ваша компания]',
-          url: data.url || 'https://yoursite.com',
-          logo: data.logo || 'https://yoursite.com/logo.png',
+          url: data.url || 'https://roboxin.ru',
+          logo: data.logo || 'https://roboxin.ru/logo.png',
           description: data.description,
           address: {
             '@type': 'PostalAddress',
