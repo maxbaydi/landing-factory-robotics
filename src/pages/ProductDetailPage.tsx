@@ -12,7 +12,7 @@ import {
   Image,
 } from 'antd';
 import { ArrowLeftOutlined, PhoneOutlined } from '@ant-design/icons';
-import productsData from '../data/products.json';
+import { getProduct } from '../utils/products';
 import SEO from '../components/SEO';
 import SchemaOrg from '../components/SchemaOrg';
 import AnimatedStarryBackground from '../components/AnimatedStarryBackground';
@@ -35,20 +35,6 @@ const useIsMobile = () => {
   return isMobile;
 };
 
-interface Product {
-  id: string;
-  name: string;
-  category: string;
-  description: string;
-  specifications: Record<string, string>;
-  images: {
-    main: string;
-    details: string;
-  };
-  applications?: string;
-  features?: string[];
-}
-
 const ProductDetailPage = () => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
@@ -56,14 +42,14 @@ const ProductDetailPage = () => {
   const [currentImage, setCurrentImage] = useState<'main' | 'details'>('main');
   const isMobile = useIsMobile();
 
-  const product = (productsData as Product[]).find((p) => p.id === id);
+  const product = id ? getProduct(id, t) : undefined;
 
   if (!product) {
     return (
       <div className="container" style={{ padding: '100px 20px', textAlign: 'center' }}>
-        <Title level={2}>Продукт не найден</Title>
+        <Title level={2}>{t('productDetail.notFound')}</Title>
         <Button type="primary" onClick={() => navigate('/products')}>
-          Вернуться к каталогу
+          {t('productDetail.backToProducts')}
         </Button>
       </div>
     );
@@ -71,6 +57,7 @@ const ProductDetailPage = () => {
 
   const seoTitle = `${product.name} | ${t('seo.products.title')}`;
   const seoDescription = product.description || t('seo.products.description');
+  const productImage = product.images?.main || '/main_hero.png';
 
   return (
     <>
@@ -78,14 +65,14 @@ const ProductDetailPage = () => {
         title={seoTitle}
         description={seoDescription}
         keywords={`${product.name}, ${product.category}, ${t('seo.products.keywords')}`}
-        image={product.images.main}
+        image={productImage}
       />
       <SchemaOrg
         type="Product"
         data={{
           name: product.name,
           description: product.description,
-          image: window.location.origin + product.images.main,
+          image: window.location.origin + productImage,
           brand: 'Comet Forward',
         }}
       />
@@ -122,10 +109,10 @@ const ProductDetailPage = () => {
               <div className="product-gallery">
                 <div className="main-image-wrapper card-hover">
                   <Image
-                    src={currentImage === 'main' ? product.images.main : product.images.details}
+                    src={currentImage === 'main' ? (product.images?.main || '/main_hero.png') : (product.images?.details || '/main_hero.png')}
                     alt={product.name}
                     className="product-main-image"
-                    fallback="/public/main_hero.png"
+                    fallback="/main_hero.png"
                   />
                 </div>
                 <div className="image-thumbnails">
@@ -133,13 +120,13 @@ const ProductDetailPage = () => {
                     className={`thumbnail card-hover ${currentImage === 'main' ? 'active' : ''}`}
                     onClick={() => setCurrentImage('main')}
                   >
-                    <img src={product.images.main} alt="Основное фото" />
+                    <img src={product.images?.main || '/main_hero.png'} alt={t('productDetail.mainImage')} />
                   </Card>
                   <Card
                     className={`thumbnail card-hover ${currentImage === 'details' ? 'active' : ''}`}
                     onClick={() => setCurrentImage('details')}
                   >
-                    <img src={product.images.details} alt="Детали" />
+                    <img src={product.images?.details || '/main_hero.png'} alt={t('productDetail.detailsImage')} />
                   </Card>
                 </div>
               </div>
@@ -199,7 +186,7 @@ const ProductDetailPage = () => {
             </Col>
           </Row>
 
-          {Object.keys(product.specifications).length > 0 && (
+          {product.specifications && Object.keys(product.specifications).length > 0 && (
             <div className="specifications-section">
               <Title level={3} className="specifications-title">
                 {t('productDetail.specifications')}
@@ -208,7 +195,7 @@ const ProductDetailPage = () => {
                 {Object.entries(product.specifications).map(([key, value]) => (
                   <Descriptions.Item
                     key={key}
-                    label={<span className="spec-label">{key}</span>}
+                    label={<span className="spec-label">{t(`specificationLabels.${key}`, key)}</span>}
                     className="spec-item"
                   >
                     <span className="spec-value">{value}</span>

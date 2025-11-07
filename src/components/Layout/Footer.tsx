@@ -34,7 +34,7 @@ const Footer = () => {
 
           <Col xs={24} sm={24} md={6} lg={6} className="footer-contacts-section">
             <div className="footer-contact-item">
-              <Text className="footer-contact-country">РФ</Text>
+              <Text className="footer-contact-country">{t('contacts.russia.countryCode')}</Text>
               <div className="footer-contact-detail">
                 <Text className="footer-contact-label">{t('contacts.phone')}</Text>
                 <a href={`tel:${t('contacts.russia.phoneOffice').replace(/[^0-9+]/g, '')}`} className="footer-contact-link">
@@ -49,7 +49,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="footer-contact-item">
-              <Text className="footer-contact-country">Казахстан</Text>
+              <Text className="footer-contact-country">{t('contacts.kazakhstan.countryCode')}</Text>
               <div className="footer-contact-detail">
                 <Text className="footer-contact-label">{t('contacts.phone')}</Text>
                 <a href={`tel:${t('contacts.kazakhstan.phoneOffice').replace(/[^0-9+]/g, '')}`} className="footer-contact-link">
@@ -64,7 +64,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="footer-contact-item">
-              <Text className="footer-contact-country">Китай</Text>
+              <Text className="footer-contact-country">{t('contacts.china.countryCode')}</Text>
               <div className="footer-contact-detail">
                 <Text className="footer-contact-label">{t('contacts.phone')}</Text>
                 <a href={`tel:${t('contacts.china.phoneOffice').replace(/[^0-9+]/g, '')}`} className="footer-contact-link">

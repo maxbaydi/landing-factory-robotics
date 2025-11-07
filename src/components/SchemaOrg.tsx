@@ -10,9 +10,9 @@ const SchemaOrg = ({ type, data }: SchemaOrgProps) => {
         return {
           '@context': 'https://schema.org',
           '@type': 'Organization',
-          name: data.name || '[Ваша компания]',
-          url: data.url || 'https://roboxin.ru',
-          logo: data.logo || 'https://roboxin.ru/logo.png',
+          name: data.name || 'Comet Forward Intelligent Technology',
+          url: data.url || window.location.origin,
+          logo: data.logo || `${window.location.origin}/logo.png`,
           description: data.description,
           address: {
             '@type': 'PostalAddress',

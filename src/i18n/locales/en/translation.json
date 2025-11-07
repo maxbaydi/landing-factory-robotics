@@ -1,0 +1,781 @@
+{
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "contacts": "Contacts"
+  },
+  "home": {
+    "hero": {
+      "label": "A reliable partner for your business",
+      "title": "Innovative robotic solutions",
+      "subtitle": "Production of advanced mobile robots for industry, logistics and education. More than 10 years of experience in developing and implementing autonomous systems.",
+      "cta": "Watch the products",
+      "companyNameChinese": " ",
+      "stats": {
+        "products": "20+ models",
+        "experience": "10+ years of experience"
+      }
+    },
+    "featuredProducts": {
+      "title": "Our robots",
+      "subtitle": "Advanced solutions for your business"
+    },
+    "advantages": {
+      "title": "Advantages of the company",
+      "experience": {
+        "title": "10+ years of experience",
+        "description": "Our team has over 10 years of research and development experience in the robotics industry"
+      },
+      "innovation": {
+        "title": "Innovative technologies",
+        "description": "Emphasis on the design of wired intelligent robots and independent innovative technologies"
+      },
+      "customization": {
+        "title": "Individual approach",
+        "description": "We develop customized innovative solutions based on ROS to meet customer needs"
+      },
+      "quality": {
+        "title": "High quality",
+        "description": "Strict quality control at all stages of production and testing of products"
+      }
+    },
+    "applications": {
+      "title": "Scope of application",
+      "subtitle": "Our robots are used in various industries",
+      "manufacturing": {
+        "title": "Production and plants",
+        "description": "Automation of production processes and in-plant logistics"
+      },
+      "logistics": {
+        "title": "Warehouse logistics",
+        "description": "Efficient cargo transportation and optimization of warehouse operations"
+      },
+      "education": {
+        "title": "Education and research",
+        "description": "Platforms for robotics training and research"
+      },
+      "agriculture": {
+        "title": "Agriculture",
+        "description": "Automation of agricultural works and monitoring of territories"
+      }
+    },
+    "technologies": {
+      "title": "Key technologies",
+      "subtitle": "Advanced technologies for maximum efficiency",
+      "slam": {
+        "title": "SLAM navigation",
+        "description": "2D and 3D SLAM for accurate positioning and mapping"
+      },
+      "autonomous": {
+        "title": "Autonomous driving",
+        "description": "RTK navigation and autonomous driving algorithms"
+      },
+      "avoidance": {
+        "title": "Avoidance of obstacles",
+        "description": "Intelligent Dynamic Obstacle Avoidance in Real Time"
+      },
+      "ros": {
+        "title": "ROS integration",
+        "description": "Full support for Robot Operating System for easy integration"
+      }
+    },
+    "additionalInfo": {
+      "title": "Additional opportunities",
+      "subtitle": "Advanced features for maximum productivity",
+      "autoCharging": {
+        "title": "Automatic charging",
+        "description": "Robots automatically return to charging station at low charge level"
+      },
+      "highPayload": {
+        "title": "High load capacity",
+        "description": "Capacity up to 300 kg for heavy transport tasks"
+      },
+      "allWeather": {
+        "title": "All-weather use",
+        "description": "Protection of IP44-IP65 for different conditions"
+      },
+      "modular": {
+        "title": "Modularity",
+        "description": "Possibility of customization and installation of additional equipment"
+      },
+      "industryManufacturing": {
+        "title": "Industry",
+        "description": "Solutions for manufacturing plants and plants"
+      },
+      "warehouseLogistics": {
+        "title": "Logistics",
+        "description": "Automation of warehouse operations and transportation"
+      },
+      "educationResearch": {
+        "title": "Education",
+        "description": "Platforms for learning and research"
+      },
+      "agricultureFarming": {
+        "title": "Agriculture",
+        "description": "Automation of work on farms and in greenhouses"
+      }
+    },
+    "workshops": {
+      "title": "Our workshops",
+      "subtitle": "Modern equipment and infrastructure for development and production",
+      "display": {
+        "title": "Demonstration stand"
+      },
+      "innovation": {
+        "title": "Innovation workshop"
+      }
+    },
+    "about": {
+      "title": "Company",
+      "founded": "Founded in 2023",
+      "description": "We are engaged in technological development and programming of a series of mobile robots. Our team has more than 10 years of research and development experience in the industry, with a focus on the design of wired intelligent robots, intelligent motion control and independent innovative technologies for indoor and outdoor scenarios.",
+      "range": "Our product range covers standard platforms of new power-driven vehicles, advanced unmanned robots, intelligent robotic inspectors, autonomous delivery robots and unmanned vehicles (UGVs) for industrial transportation.",
+      "applications": "These technologies are widely used in various fields such as education, inspection, manufacturing plants and parking space distribution. Not only do we provide standard products, but we also develop customized innovative solutions based on robot operating systems to meet a variety of practical customer needs."
+    },
+    "features": {
+      "title": "Our advantages",
+      "experience": {
+        "title": "10+ years of experience",
+        "description": "A team of experts with deep knowledge in robotics"
+      },
+      "innovation": {
+        "title": "Innovative technologies",
+        "description": "Own development and advanced solutions"
+      },
+      "customization": {
+        "title": "Individual approach",
+        "description": "Customization for unique customer needs"
+      },
+      "quality": {
+        "title": "High quality",
+        "description": "Strict quality control at all stages of production"
+      }
+    }
+  },
+  "featured": {
+    "hero": {
+      "title": "Our products",
+      "subtitle": "Innovative robotic solutions for your business"
+    },
+    "viewDetails": "Details",
+    "catalog": {
+      "title": "Do you want to see the entire catalog?",
+      "subtitle": "View the full range of our robotic solutions",
+      "button": "Go to the full catalogue"
+    }
+  },
+  "products": {
+    "dt-01": {
+      "name": "DT-01",
+      "category": "Robots",
+      "description": "",
+      "specifications": {
+        "series": "DT",
+        "fullName": "DT-01 Two-Wheel Differential Mobile Robot",
+        "typeCategory": "Two-wheeled differential robot",
+        "purpose": "Flexible robot for rooms with high load capacity, automation and reliability. For factories, shopping centers, warehouses.",
+        "movementType": "Differential drive, rotation in place",
+        "navigation": "2D SLAM Laser Navigation",
+        "communicationProtocols": "RS-232, ROS, MQTT",
+        "features": "Automatic charging, customization of appearance, support for extensions, external power",
+        "sensors": "2D LiDAR, IMU, bumper, industrial router",
+        "application": "Production, warehouses, logistics, service robotics, education"
+      },
+      "applications": "Production, warehouses, logistics, service robotics, education",
+      "features": [
+        "Automatic charging",
+        "customization",
+        "extension",
+        "feeding"
+      ]
+    },
+    "dt-01-pro": {
+      "name": "DT-01 Pro",
+      "category": "Robots",
+      "description": "",
+      "specifications": {
+        "series": "DT",
+        "fullName": "DT-01 Pro Two-Wheel Differential Mobile Robot",
+        "typeCategory": "Two-wheeled differential robot",
+        "purpose": "Industrial medium-duty robot for automation of logistics and transportation in premises.",
+        "movementType": "Differential drive, rotation in place",
+        "navigation": "2D SLAM Laser Navigation",
+        "communicationProtocols": "RS-232, ROS, MQTT, Modbus TCP",
+        "features": "Automatic charging, dynamic obstacle avoidance, mapping up to 50,000 m2",
+        "sensors": "2D LiDAR, IMU, bumper, industrial router, navigation radar",
+        "application": "Medium production facilities, warehouses, service industry, education"
+      },
+      "applications": "Medium production facilities, warehouses, service industry, education",
+      "features": [
+        "Automatic charging",
+        "dynamical avoidance",
+        "mapping up to 50,000 m2"
+      ]
+    },
+    "dt-02-pro": {
+      "name": "DT-02 Pro",
+      "category": "Robots",
+      "description": "",
+      "specifications": {
+        "series": "DT",
+        "fullName": "DT-02 Pro Two-Wheel Differential Mobile Robot",
+        "typeCategory": "Two-wheeled differential robot",
+        "purpose": "Heavy transport robot for large loads, industrial operations with high load.",
+        "movementType": "Differential drive, rotation in place",
+        "navigation": "2D SLAM Laser Navigation",
+        "communicationProtocols": "RS-232, ROS, MQTT, Modbus TCP",
+        "features": "For heavy loads (>100 kg), mapping up to 50,000 m2, automatic charging",
+        "sensors": "2D LiDAR, IMU, bumper, industrial router, navigation radar",
+        "application": "Large production, heavy logistics, warehousing"
+      },
+      "applications": "Large production, heavy logistics, warehousing",
+      "features": [
+        "For heavy loads (>100 kg)",
+        "mapping up to 50,000 m2",
+        "charging"
+      ]
+    },
+    "pt-01-pro": {
+      "name": "PT-01 Pro",
+      "category": "Robots",
+      "description": "",
+      "specifications": {
+        "series": "PT",
+        "fullName": "PT-01 Pro Four-Wheel Differential Mobile Robot",
+        "typeCategory": "Four-wheeled differential robot",
+        "purpose": "Universal robot for use indoors and outdoors, adapts to different types of terrain.",
+        "movementType": "Four-wheel differential, rotation in place",
+        "navigation": "2D SLAM",
+        "communicationProtocols": "RS-232, ROS",
+        "features": "Quick-shift battery, automatic charging, all-weather use, customization",
+        "sensors": "—",
+        "application": "Logistics, warehouses, production lines, medicine, education, urban roads, agricultural fields"
+      },
+      "applications": "Logistics, warehouses, production lines, medicine, education, urban roads, agricultural fields",
+      "features": [
+        "Quick-shift battery",
+        "charging",
+        "weather-use",
+        "customization"
+      ]
+    },
+    "pt-03": {
+      "name": "PT-03",
+      "category": "Robots",
+      "description": "",
+      "specifications": {
+        "series": "PT",
+        "fullName": "PT-03 Four-Wheel Differential Mobile Robot",
+        "typeCategory": "Four-wheeled differential robot",
+        "purpose": "Robot increased load capacity for transportation in various conditions (rooms and street).",
+        "movementType": "Four-wheel differential, rotation in place",
+        "navigation": "2D SLAM",
+        "communicationProtocols": "RS-232, ROS",
+        "features": "Fast-shift battery, all-weather use, independent suspension",
+        "sensors": "—",
+        "application": "Heavy logistics, warehouses, industrial facilities, construction"
+      },
+      "applications": "Heavy logistics, warehouses, industrial facilities, construction",
+      "features": [
+        "Quick-shift battery",
+        "weather-use",
+        "suspension"
+      ]
+    },
+    "mt-01": {
+      "name": "MT-01",
+      "category": "Robots",
+      "description": "",
+      "specifications": {
+        "series": "MT",
+        "fullName": "MT-01 Ackermann Steering Mobile Robot",
+        "typeCategory": "Ackerman steering robot (front wheels)",
+        "purpose": "Universal chassis for rooms and streets with high load capacity and adaptation to difficult conditions.",
+        "movementType": "Front wheel drive, rear wheel drive, Ackerman",
+        "navigation": "—",
+        "communicationProtocols": "RS-232, ROS",
+        "features": "Independent suspension, standardized protocols, fast secondary development, sport mode switching",
+        "sensors": "—",
+        "application": "Logistics, warehouses, construction, research, education"
+      },
+      "applications": "Logistics, warehouses, construction, research, education",
+      "features": [
+        "Independent suspension",
+        "standardized",
+        "rapid secondary development",
+        "switching"
+      ]
+    },
+    "mt-04-pro": {
+      "name": "MT-04 Pro",
+      "category": "Robots",
+      "description": "",
+      "specifications": {
+        "series": "MT",
+        "fullName": "MT-04 Pro Ackermann Steering Mobile Robot",
+        "typeCategory": "Ackerman steering robot (front wheels)",
+        "purpose": "High-speed robot of increased load capacity for transportation of large loads at high speed.",
+        "movementType": "Front wheel drive, rear wheel drive, Ackerman",
+        "navigation": "3D SLAM laser navigation, RTK navigation",
+        "communicationProtocols": "CAN, ROS/Ubuntu",
+        "features": "Overcoming obstacles up to 8 cm, lifting 20 ° without load",
+        "sensors": "16-line 3D LiDAR, RTK module, depth camera, IMU, bumper, industrial computer",
+        "application": "Warehouse logistics, construction, R&D, autonomous driving"
+      },
+      "applications": "Warehouse logistics, construction, R&D, autonomous driving",
+      "features": [
+        "Overcoming obstacles up to 8 cm",
+        "lift-off"
+      ]
+    },
+    "et-01": {
+      "name": "ET-01",
+      "category": "Robots",
+      "description": "",
+      "specifications": {
+        "series": "MT",
+        "fullName": "ET-01 Ackermann Steering Mobile Robot",
+        "typeCategory": "Ackerman steering robot (front wheels)",
+        "purpose": "High-speed robot for transporting medium-sized cargo.",
+        "movementType": "Front wheel drive, rear wheel drive, Ackerman",
+        "navigation": "—",
+        "communicationProtocols": "RS-232, ROS",
+        "features": "Maximum speed of 5 m/s, independent suspension",
+        "sensors": "—",
+        "application": "High-speed logistics, testing, R&D"
+      },
+      "applications": "High-speed logistics, testing, R&D",
+      "features": [
+        "Maximum speed 5 m/s",
+        "suspension"
+      ]
+    },
+    "ht-01-mini": {
+      "name": "HT-01 Mini",
+      "category": "Robots",
+      "description": "",
+      "specifications": {
+        "series": "HT",
+        "fullName": "HT-01 Mini Omnidirectional Mobile Robot",
+        "typeCategory": "Four-wheeled omni-directional robot",
+        "purpose": "Compact maneuverable robot for narrow spaces with high positioning accuracy.",
+        "movementType": "Four-wheeled, four-wheel drive, omni-directional chassis",
+        "navigation": "2D SLAM Laser Navigation",
+        "communicationProtocols": "ROS/Ubuntu, MQTT",
+        "features": "Rotation in place, lateral movement, sliding, Ackerman mode, manual/automatic charging",
+        "sensors": "2D LiDAR, IMU, industrial router",
+        "application": "Warehouse logistics, research, education, agriculture, narrow passages"
+      },
+      "applications": "Warehouse logistics, research, education, agriculture, narrow passages",
+      "features": [
+        "Rotation in place",
+        "sideways",
+        "slip",
+        "regime of Ackerman",
+        "hand-charging"
+      ]
+    },
+    "ht-01": {
+      "name": "HT-01",
+      "category": "Robots",
+      "description": "",
+      "specifications": {
+        "series": "HT",
+        "fullName": "HT-01 Omnidirectional Mobile Robot",
+        "typeCategory": "Four-wheeled omni-directional robot",
+        "purpose": "Standard omni-directional robot for logistics and education.",
+        "movementType": "Four-wheeled, four-wheel drive, omni-directional chassis",
+        "navigation": "3D SLAM Laser Navigation",
+        "communicationProtocols": "ROS/Ubuntu, MQTT, Modbus TCP",
+        "features": "3D mapping, climbing 20°, overcoming obstacles 8 cm, navigation in narrow passages (1 m)",
+        "sensors": "3D LiDAR, IMU, bumper, industrial router, camera",
+        "application": "Warehouses, logistics, research, education, parks, campuses"
+      },
+      "applications": "Warehouses, logistics, research, education, parks, campuses",
+      "features": [
+        "3D mapping",
+        "20°",
+        "overcoming obstacles 8 cm",
+        "navigation in narrow passages (1 m)"
+      ]
+    },
+    "ht-01-max": {
+      "name": "HT-01 MAX",
+      "category": "Robots",
+      "description": "",
+      "specifications": {
+        "series": "HT",
+        "fullName": "HT-01 MAX Omnidirectional Mobile Robot",
+        "typeCategory": "Four-wheeled omni-directional robot",
+        "purpose": "Maximum load capacity robot with omni-directional movement.",
+        "movementType": "Four-wheeled, four-wheel drive, omni-directional chassis",
+        "navigation": "—",
+        "communicationProtocols": "ROS",
+        "features": "Maximum size for HT series, omni-movement",
+        "sensors": "—",
+        "application": "Large warehouses, logistics centers"
+      },
+      "applications": "Large warehouses, logistics centers",
+      "features": [
+        "Maximum size for the HT series",
+        "omnimovement"
+      ]
+    },
+    "ht-02": {
+      "name": "HT-02",
+      "category": "Robots",
+      "description": "",
+      "specifications": {
+        "series": "HT",
+        "fullName": "HT-02 Omnidirectional Mobile Robot",
+        "typeCategory": "Four-wheeled omni-directional robot",
+        "purpose": "Robot increased load capacity for heavy logistics tasks.",
+        "movementType": "Four-wheeled, four-wheel drive, omni-directional chassis",
+        "navigation": "—",
+        "communicationProtocols": "ROS",
+        "features": "Load capacity of 240 kg, omni-movement",
+        "sensors": "—",
+        "application": "Heavy warehouse logistics"
+      },
+      "applications": "Heavy warehouse logistics",
+      "features": [
+        "Capacity of 240 kg",
+        "omnimovement"
+      ]
+    },
+    "ht-03": {
+      "name": "HT-03",
+      "category": "Robots",
+      "description": "",
+      "specifications": {
+        "series": "HT",
+        "fullName": "HT-03 Omnidirectional Mobile Robot",
+        "typeCategory": "Four-wheeled omni-directional robot",
+        "purpose": "Maximum load capacity in the HT-series for bulky cargo.",
+        "movementType": "Four-wheeled, four-wheel drive, omni-directional chassis",
+        "navigation": "—",
+        "communicationProtocols": "ROS",
+        "features": "Maximum load capacity of 300 kg, omni-movement",
+        "sensors": "—",
+        "application": "Heavy industrial logistics, production lines"
+      },
+      "applications": "Heavy industrial logistics, production lines",
+      "features": [
+        "Maximum load capacity of 300 kg",
+        "omnimovement"
+      ]
+    },
+    "gt-01-mini": {
+      "name": "GT-01 Mini",
+      "category": "Robots",
+      "description": "",
+      "specifications": {
+        "series": "GT",
+        "fullName": "GT-01 Mini Track-Driven Mobile Robot",
+        "typeCategory": "Caterpillar",
+        "purpose": "Compact all-terrain vehicle for agriculture, forestry, mining, construction sites.",
+        "movementType": "Caterpillar drive, differential, rotation in place",
+        "navigation": "—",
+        "communicationProtocols": "RS-232, ROS",
+        "features": "Automatic charging, high passability on rough terrain",
+        "sensors": "—",
+        "application": "Agriculture, pastures, forestry, mining, construction"
+      },
+      "applications": "Agriculture, pastures, forestry, mining, construction",
+      "features": [
+        "Automatic charging",
+        "cross-country"
+      ]
+    },
+    "gt-01": {
+      "name": "GT-01",
+      "category": "Robots",
+      "description": "",
+      "specifications": {
+        "series": "GT",
+        "fullName": "GT-01 Track-Driven Mobile Robot",
+        "typeCategory": "Caterpillar",
+        "purpose": "Standard tracked robot for off-road operations and agriculture.",
+        "movementType": "Caterpillar drive, differential, rotation in place",
+        "navigation": "RTK High Accuracy Navigation",
+        "communicationProtocols": "RS-232, ROS, MQTT, Modbus TCP",
+        "features": "RTK navigation, route planning, dynamic obstacle avoidance, autocharging",
+        "sensors": "LiDAR, RTK module",
+        "application": "Agriculture, horticulture, farms, greenhouses, off-road operations"
+      },
+      "applications": "Agriculture, horticulture, farms, greenhouses, off-road operations",
+      "features": [
+        "RTK navigation",
+        "route-planning",
+        "dynamical avoidance",
+        "charging"
+      ]
+    },
+    "gt-02": {
+      "name": "GT-02",
+      "category": "Robots",
+      "description": "",
+      "specifications": {
+        "series": "GT",
+        "fullName": "GT-02 Track-Driven Mobile Robot",
+        "typeCategory": "Caterpillar",
+        "purpose": "Heavy tracked robot for bulky cargo in difficult conditions.",
+        "movementType": "Caterpillar drive, differential, rotation in place",
+        "navigation": "—",
+        "communicationProtocols": "RS-232, ROS",
+        "features": "Increased battery capacity (60 Ah), high passability",
+        "sensors": "—",
+        "application": "Large farms, construction sites, mining"
+      },
+      "applications": "Large farms, construction sites, mining",
+      "features": [
+        "Increased battery capacity (60 Ah)",
+        "cross-country"
+      ]
+    },
+    "mk-01": {
+      "name": "MK-01",
+      "category": "Robots",
+      "description": "",
+      "specifications": {
+        "series": "Specialized",
+        "fullName": "MK-01 Mecanum Wheel Omnidirectional Robot",
+        "typeCategory": "Robot with wheels Mecanum (omni-directional)",
+        "purpose": "Robot with wheels Mecanum for flat surfaces with rotation in place.",
+        "movementType": "Mecanum wheels, omni-directional, rotation in place",
+        "navigation": "2D SLAM",
+        "communicationProtocols": "RS-232, ROS, MQTT, Modbus TCP",
+        "features": "Automatic charging, mapping up to 100,000 m2, high maneuverability",
+        "sensors": "2D LiDAR, IMU, industrial router, navigation radar, charging station",
+        "application": "Logistics, warehouses, service robotics, healthcare, education"
+      },
+      "applications": "Logistics, warehouses, service robotics, healthcare, education",
+      "features": [
+        "Automatic charging",
+        "mapping up to 100,000 m2",
+        "maneuverability"
+      ]
+    },
+    "searobot-01": {
+      "name": "SeaRobot-01",
+      "category": "Robots",
+      "description": "",
+      "specifications": {
+        "series": "Specialized",
+        "fullName": "SeaRobot-01 Outdoor All-Terrain Mobile Robot",
+        "typeCategory": "Four-wheeled all-terrain vehicle for rooms and streets",
+        "purpose": "An all-terrain robot for park patrols, agriculture, off-road operations.",
+        "movementType": "Four-wheel drive, on-site rotation support",
+        "navigation": "3D SLAM Laser Navigation",
+        "communicationProtocols": "ROS, MQTT, Modbus TCP",
+        "features": "3D mapping, PTZ monitoring, automatic charging, mapping up to 100,000 m2",
+        "sensors": "3D LiDAR, PTZ camera, turn indicators, lighting, collision protection",
+        "application": "Off-road patrol, agriculture, parks, territorial inspection"
+      },
+      "applications": "Off-road patrol, agriculture, parks, territorial inspection",
+      "features": [
+        "3D mapping",
+        "PTZ monitoring",
+        "charging",
+        "mapping up to 100,000 m2"
+      ]
+    },
+    "gt-01-r300-(rtk)": {
+      "name": "GT-01 R300 (RTK)",
+      "category": "Robots",
+      "description": "",
+      "specifications": {
+        "series": "Specialized",
+        "fullName": "GT-01 R300 Outdoor All-Terrain RTK Navigation Robot",
+        "typeCategory": "Caterpillar robot with RTK navigation",
+        "purpose": "Multifunctional transport platform for agriculture and horticulture with high-precision RTK navigation.",
+        "movementType": "Caterpillar drive",
+        "navigation": "RTK high-precision navigation",
+        "communicationProtocols": "MQTT, Modbus TCP",
+        "features": "RTK precise navigation, point-to-point path planning, dynamic obstacle avoidance, autocharging at low charge",
+        "sensors": "RTK module, LiDAR, motion control system, motor drive, tracked chassis",
+        "application": "Agriculture, gardening, farms, greenhouses, large off-road scenarios"
+      },
+      "applications": "Agriculture, gardening, farms, greenhouses, large off-road scenarios",
+      "features": [
+        "RTK precise navigation",
+        "point-to-point planning",
+        "dynamical avoidance",
+        "low-charge"
+      ]
+    },
+    "gt-01-u300": {
+      "name": "GT-01 U300",
+      "category": "Robots",
+      "description": "",
+      "specifications": {
+        "series": "Specialized",
+        "fullName": "GT-01 U300 Intelligent Following Tracked Transporter",
+        "typeCategory": "A caterpillar robot with automatic follow-up function",
+        "purpose": "Intelligent transporter with the function of following the operator for human-robot collaboration.",
+        "movementType": "Caterpillar drive with two brushless servo motors",
+        "navigation": "Automatic following",
+        "communicationProtocols": "—",
+        "features": "Automatic tracking technology, remote double control, ultrasonic obstacle avoidance, all-weather operation (IP65), waterproof caterpillars, modular extension of functions",
+        "sensors": "Vehicle tracking module, manual tag controller, ultrasonic sensor, solution management system",
+        "application": "Fruit gardens, horticulture, farms, greenhouses, joint man-machine scenarios (harvest with transportation)"
+      },
+      "applications": "Fruit gardens, horticulture, farms, greenhouses, joint man-machine scenarios (harvest with transportation)",
+      "features": [
+        "Automatic follow-up technology",
+        "remote-control",
+        "ultrasonic avoidance",
+        "all-weather operation (IP65)",
+        "waterproof caterpillars",
+        "modular"
+      ]
+    }
+  },
+  "catalog": {
+    "title": "Complete product catalogue",
+    "subtitle": "The full range of our robotic solutions",
+    "filter": {
+      "all": "All categories",
+      "search": "Search by name. . ."
+    },
+    "noProducts": "No products found",
+    "noDescription": "Description missing",
+    "pagination": {
+      "total": "Total {{total}} of goods"
+    }
+  },
+  "productDetail": {
+    "specifications": "Technical specifications",
+    "description": "Description",
+    "applications": "Application",
+    "features": "Features",
+    "backToProducts": "Back to the catalogue",
+    "contact": "Contact us",
+    "notFound": "No product found",
+    "mainImage": "Main image",
+    "detailsImage": "Detailed image"
+  },
+  "contacts": {
+    "title": "Contact information",
+    "subtitle": "Contact us for a consultation",
+    "companyName": "Comet Forward Intelligent Technology Co., Ltd.",
+    "companyDescription": "Founded in 2023, Comet Forward Intelligent Technology Co., Ltd. is engaged in technological development and programming of a series of mobile robots. Our team has more than 10 years of research and development experience in the industry, with a focus on the design of wired intelligent robots, intelligent motion control and independent innovative technologies for indoor and outdoor scenarios. Our product range covers standard platforms of new power-driven vehicles, advanced unmanned robots, intelligent robotic inspectors, autonomous delivery robots and unmanned vehicles for industrial transportation. These technologies are widely used in various fields such as education, inspection, manufacturing plants and parking space distribution. Not only do we provide standard products, but we also develop customized innovative solutions based on robot operating systems to meet a variety of practical customer needs.",
+    "russia": {
+      "title": "Representative in Russia",
+      "countryCode": "RUSSIAN FEDERATION",
+      "phoneOffice": "+7 (499) 4031-888",
+      "phoneMessengers": "+7 (925) 4031-888",
+      "messengersLabel": "WhatsApp / Telegram",
+      "address": "Russia, Moscow, Merzlyakovskiy Lane, 15, PM 23",
+      "email": "mail@nihao.su",
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.5384259949544!2d37.58909177679326!3d55.75863898993544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a378e7e8e21%3A0x7e3d1d1d1d1d1d1d!2z0JzQtdGA0LfQu9GP0LrQvtCy0YHQutC40Lkg0L_QtdGA0LXRg9C70L7Qug!5e0!3m2!1sru!2sru!4v1234567890123!5m2!1sru!2sru"
+    },
+    "kazakhstan": {
+      "title": "Representative in Kazakhstan",
+      "countryCode": "Kazakhstan",
+      "phoneOffice": "+7 (727) 3122-888",
+      "phoneMessengers": "+7 (771) 3122-888",
+      "messengersLabel": "WhatsApp / Telegram",
+      "address": "Kazakhstan, Almaty, Makataeva St., 127/11",
+      "email": "mail@nihao.kz",
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2906.726287726287!2d76.94907576563988!3d43.238167799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDPCsDE0JzE3LjQiTiA3NsKwNTcnMDQuNiJF!5e0!3m2!1sru!2skz!4v1234567890123!5m2!1sru!2skz"
+    },
+    "china": {
+      "title": "Representative in China",
+      "countryCode": "China",
+      "phoneOffice": "+86 132 66714-888",
+      "address": "World Trade Area A, Futian District, Shenzhen, China",
+      "addressChinese": "深圳市福田区世界贸易广场A",
+      "email": "mail@hellosales.cn",
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.1234567890123!2d114.05678901234567!3d22.541234567890123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDMyJzI4LjQiTiAxMTTCsDAzJzI0LjQiRQ!5e0!3m2!1sru!2scn!4v1234567890123!5m2!1sru!2scn"
+    },
+    "phone": "Telephone",
+    "officeLabel": "Office",
+    "email": "Email",
+    "address": "Address"
+  },
+  "footer": {
+    "about": "Company",
+    "products": "Products",
+    "contacts": "Contacts",
+    "copyright": "© 2025 All rights reserved",
+    "description": "Production of innovative robotic solutions",
+    "address": "World Trade Square A, Futian District, Shenzhen, China",
+    "cta": {
+      "title": "Contact us",
+      "subtitle": "request or consultation",
+      "button": "Contact me"
+    }
+  },
+  "seo": {
+    "home": {
+      "title": "Production of robots | Innovative robotic solutions",
+      "description": "Manufacture advanced mobile robots for industry, logistics and education. Unmanned robots, robotic inspectors, autonomous delivery robots.",
+      "keywords": "robot manufacturing, mobile robots, unmanned robots, robot inspectors, delivery robots, industrial robots, UGV, AMR, buy a robot"
+    },
+    "products": {
+      "title": "Catalogue of robots | Production of robotics",
+      "description": "A wide range of robotic solutions: AMR, CMR, unmanned vehicles, robots for patrol and delivery. Technical specifications and prices.",
+      "keywords": "catalogue of robots, buy robot, AMR robots, CMR robots, robots price, industrial robots, logistics robots"
+    },
+    "catalog": {
+      "title": "Full catalogue of robots | Production of robotics",
+      "description": "Full range of robotic solutions: AMR, CMR, unmanned vehicles, robots for patrol and delivery. Technical specifications and prices.",
+      "keywords": "catalogue of robots, buy robot, AMR robots, CMR robots, robots price, industrial robots, logistics robots"
+    },
+    "contacts": {
+      "title": "Contacts | Production of robots",
+      "description": "Contact us for advice on the selection and purchase of robotic solutions. Phone, email, robot manufacturing address.",
+      "keywords": "contacts of the robot manufacturer, buy a robot, consultation on robots, production of robots address"
+    }
+  },
+  "productsData": {
+    "categories": {
+      "all": "Robots"
+    },
+    "specificationLabels": {
+      "series": "Series",
+      "fullName": "Full Name",
+      "typeCategory": "Type/Category",
+      "purpose": "Appointment",
+      "dimensions": "Dimensions (WxW), mm",
+      "weight": "Weight, kg",
+      "maxSpeed": "Maximum speed, m/s",
+      "payload": "Load capacity, kg",
+      "workingTime": "Working hours, h",
+      "batteryVoltage": "ACB voltage, B",
+      "batteryCapacity": "Capacity of ACB, Ah",
+      "movementType": "Type of movement",
+      "navigation": "Navigation",
+      "positioningAccuracy": "Precision of positioning",
+      "communicationProtocols": "Communication Protocols",
+      "protectionDegree": "Protection",
+      "operatingTemperature": "Operating temperature, °C",
+      "features": "Features",
+      "sensors": "Sensors",
+      "application": "Application"
+    }
+  },
+  "specificationLabels": {
+    "series": "Series",
+    "fullName": "Full Name",
+    "typeCategory": "Type/Category",
+    "purpose": "Appointment",
+    "dimensions": "Dimensions (WxW), mm",
+    "weight": "Weight, kg",
+    "maxSpeed": "Maximum speed, m/s",
+    "payload": "Load capacity, kg",
+    "workingTime": "Working hours, h",
+    "batteryVoltage": "ACB voltage, B",
+    "batteryCapacity": "Capacity of ACB, Ah",
+    "movementType": "Type of movement",
+    "navigation": "Navigation",
+    "positioningAccuracy": "Precision of positioning",
+    "communicationProtocols": "Communication Protocols",
+    "protectionDegree": "Protection",
+    "operatingTemperature": "Operating temperature, °C",
+    "features": "Features",
+    "sensors": "Sensors",
+    "application": "Application"
+  }
+}

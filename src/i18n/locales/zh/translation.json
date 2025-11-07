@@ -1,0 +1,781 @@
+{
+  "nav": {
+    "home": "主流",
+    "products": "产品",
+    "contacts": "联系人"
+  },
+  "home": {
+    "hero": {
+      "label": "你生意的可靠合伙人",
+      "title": "创新机器人解决方案",
+      "subtitle": "生产工业,物流,教育的先进移动机器人. 在制定和实施自主体系方面积累了10多年的经验.",
+      "cta": "注意产品",
+      "companyNameChinese": "慧行智能科技",
+      "stats": {
+        "products": "20+ 型号",
+        "experience": "10年以上经验"
+      }
+    },
+    "featuredProducts": {
+      "title": "我们的机器人",
+      "subtitle": "您的事务高级解决方案"
+    },
+    "advantages": {
+      "title": "公司的优点",
+      "experience": {
+        "title": "10年以上经验",
+        "description": "我们的团队在机器人工业方面有十多年的研发经验"
+      },
+      "innovation": {
+        "title": "创新技术",
+        "description": "强调有线智能机器人和独立创新技术的设计"
+      },
+      "customization": {
+        "title": "个别办法",
+        "description": "我们开发基于ROS的定制创新解决方案,以满足客户需求"
+      },
+      "quality": {
+        "title": "高质量",
+        "description": "严格产品生产和检验各阶段质量监管"
+      }
+    },
+    "applications": {
+      "title": "适用范围",
+      "subtitle": "我们的机器人被用于各种行业",
+      "manufacturing": {
+        "title": "生产和工厂",
+        "description": "生产工艺和厂内物流自动化"
+      },
+      "logistics": {
+        "title": "仓库后勤",
+        "description": "高效货物运输和优化仓库业务"
+      },
+      "education": {
+        "title": "教育和研究",
+        "description": "机器人培训和研究平台"
+      },
+      "agriculture": {
+        "title": "农业",
+        "description": "农业工程自动化和属地监测"
+      }
+    },
+    "technologies": {
+      "title": "关键技术",
+      "subtitle": "最高效率的先进技术",
+      "slam": {
+        "title": "SLAM 导航",
+        "description": "精确定位和绘图的2D和3D SLAM"
+      },
+      "autonomous": {
+        "title": "自主驾驶",
+        "description": "RTK 导航和自主驱动算法"
+      },
+      "avoidance": {
+        "title": "避免障碍",
+        "description": "智能动态 实时避免障碍"
+      },
+      "ros": {
+        "title": "ROS一体化",
+        "description": "全面支持机器人操作系统方便集成"
+      }
+    },
+    "additionalInfo": {
+      "title": "其他机会",
+      "subtitle": "最高生产力的先进特性",
+      "autoCharging": {
+        "title": "自动充电",
+        "description": "机器人自动返回低收费电站"
+      },
+      "highPayload": {
+        "title": "高负荷能力",
+        "description": "300公斤以下的重型运输能力"
+      },
+      "allWeather": {
+        "title": "全天候使用",
+        "description": "在不同条件下保护IP44-IP65"
+      },
+      "modular": {
+        "title": "模块",
+        "description": "定制和安装额外设备的可能性"
+      },
+      "industryManufacturing": {
+        "title": "工业",
+        "description": "制造厂和工厂的解决办法"
+      },
+      "warehouseLogistics": {
+        "title": "后勤",
+        "description": "仓库业务和运输自动化"
+      },
+      "educationResearch": {
+        "title": "学历",
+        "description": "学习和研究平台"
+      },
+      "agricultureFarming": {
+        "title": "农业",
+        "description": "农场和温室工作的自动化"
+      }
+    },
+    "workshops": {
+      "title": "我们的车间",
+      "subtitle": "发展和生产的现代设备和基础设施",
+      "display": {
+        "title": "示范站"
+      },
+      "innovation": {
+        "title": "创新讲习班"
+      }
+    },
+    "about": {
+      "title": "连队",
+      "founded": "创建于2023年",
+      "description": "我们正在从事一系列移动机器人的技术开发和编程。 我们的团队在工业领域有十多年的研发经验,重点是设计有线智能机器人,智能运动控制以及室内室外情景的独立创新技术.",
+      "range": "我国产品范围涵盖新型动力驱动车辆,先进无人驾驶机器人,智能机器人检查员,自主投递机器人和工业运输无人驾驶车辆(UGV)的标准平台.",
+      "applications": "这些技术广泛应用于教育,检查,制造厂和停车场分配等各个领域. 我们不仅提供标准产品,还开发基于机器人操作系统的定制创新解决方案,以满足各种实际客户需求."
+    },
+    "features": {
+      "title": "我们的优势",
+      "experience": {
+        "title": "10年以上经验",
+        "description": "机器人学知识丰富的专家组"
+      },
+      "innovation": {
+        "title": "创新技术",
+        "description": "拥有发展和先进的解决办法"
+      },
+      "customization": {
+        "title": "个别办法",
+        "description": "为独特的客户需求定制"
+      },
+      "quality": {
+        "title": "高质量",
+        "description": "在生产的各个阶段严格质量控制"
+      }
+    }
+  },
+  "featured": {
+    "hero": {
+      "title": "我们的产品",
+      "subtitle": "为您的企业提供创新的机器人解决方案"
+    },
+    "viewDetails": "细节",
+    "catalog": {
+      "title": "你想看整个目录吗?",
+      "subtitle": "查看整个机器人解决方案",
+      "button": "转到完整的目录"
+    }
+  },
+  "products": {
+    "dt-01": {
+      "name": "DT-01",
+      "category": "机器人们",
+      "description": "",
+      "specifications": {
+        "series": "DT",
+        "fullName": "DT-01 Two-Wheel Differential Mobile Robot",
+        "typeCategory": "双轮微分机器人",
+        "purpose": "用于负载能力高,自动化和可靠性强的房间的灵活机器人. 工厂 购物中心 仓库.",
+        "movementType": "不同驱动器,旋转到位",
+        "navigation": "2D SLAM 导弹 激光导航",
+        "communicationProtocols": "RS-232, ROS, MQTT",
+        "features": "自动充电、定制外观、支持扩展、外部电源",
+        "sensors": "2D LiDAR, IMU, 保险杠, 工业路由器",
+        "application": "生产、仓库、后勤、服务机器人、教育"
+      },
+      "applications": "生产、仓库、后勤、服务机器人、教育",
+      "features": [
+        "自动充电",
+        "定制",
+        "扩展",
+        "进食"
+      ]
+    },
+    "dt-01-pro": {
+      "name": "DT-01 Pro",
+      "category": "机器人们",
+      "description": "",
+      "specifications": {
+        "series": "DT",
+        "fullName": "DT-01 Pro Two-Wheel Differential Mobile Robot",
+        "typeCategory": "双轮微分机器人",
+        "purpose": "工业中型机器人,用于后勤自动化和房地运输.",
+        "movementType": "不同驱动器,旋转到位",
+        "navigation": "2D SLAM 导弹 激光导航",
+        "communicationProtocols": "RS-232, ROS, MQTT, Modbus TCP",
+        "features": "自动充电、避免动态障碍、绘制最高达50 000平方米的地图",
+        "sensors": "2D LiDAR、IMU、保险杠、工业路由器、导航雷达",
+        "application": "中等生产设施、仓库、服务业、教育"
+      },
+      "applications": "中等生产设施、仓库、服务业、教育",
+      "features": [
+        "自动充电",
+        "动态撤销",
+        "绘制最高达50 000平方米的地图"
+      ]
+    },
+    "dt-02-pro": {
+      "name": "DT-02 Pro",
+      "category": "机器人们",
+      "description": "",
+      "specifications": {
+        "series": "DT",
+        "fullName": "DT-02 Pro Two-Wheel Differential Mobile Robot",
+        "typeCategory": "双轮微分机器人",
+        "purpose": "重型运输机器人用于大型载荷,高载的工业运营.",
+        "movementType": "不同驱动器,旋转到位",
+        "navigation": "2D SLAM 导弹 激光导航",
+        "communicationProtocols": "RS-232, ROS, MQTT, Modbus TCP",
+        "features": "用于重载( > 100公斤),绘图最多50 000平方米,自动充电",
+        "sensors": "2D LiDAR、IMU、保险杠、工业路由器、导航雷达",
+        "application": "大型生产、重型物流、仓储"
+      },
+      "applications": "大型生产、重型物流、仓储",
+      "features": [
+        "重载( > 100公斤)",
+        "绘制最高达50 000平方米的地图",
+        "充电"
+      ]
+    },
+    "pt-01-pro": {
+      "name": "PT-01 Pro",
+      "category": "机器人们",
+      "description": "",
+      "specifications": {
+        "series": "PT",
+        "fullName": "PT-01 Pro Four-Wheel Differential Mobile Robot",
+        "typeCategory": "四轮差别机器人",
+        "purpose": "用于室内外的通用机器人,适应不同类型的地形.",
+        "movementType": "四轮偏差,旋转到位",
+        "navigation": "2D SLAM 导弹",
+        "communicationProtocols": "RS-232, ROS",
+        "features": "快速移动电池、自动充电、全天候使用、定制",
+        "sensors": "—",
+        "application": "物流,仓库,生产线,医药,教育,城市道路,农田"
+      },
+      "applications": "物流,仓库,生产线,医药,教育,城市道路,农田",
+      "features": [
+        "快速移动电池",
+        "充电",
+        "天气使用",
+        "定制"
+      ]
+    },
+    "pt-03": {
+      "name": "PT-03",
+      "category": "机器人们",
+      "description": "",
+      "specifications": {
+        "series": "PT",
+        "fullName": "PT-03 Four-Wheel Differential Mobile Robot",
+        "typeCategory": "四轮差别机器人",
+        "purpose": "在各种条件下(房间和街道),机器人增加了运输负荷.",
+        "movementType": "四轮偏差,旋转到位",
+        "navigation": "2D SLAM 导弹",
+        "communicationProtocols": "RS-232, ROS",
+        "features": "快车电池,全天候使用,独立悬挂",
+        "sensors": "—",
+        "application": "重型物流,仓库,工业设施,建筑"
+      },
+      "applications": "重型物流,仓库,工业设施,建筑",
+      "features": [
+        "快速移动电池",
+        "天气使用",
+        "暂停"
+      ]
+    },
+    "mt-01": {
+      "name": "MT-01",
+      "category": "机器人们",
+      "description": "",
+      "specifications": {
+        "series": "MT",
+        "fullName": "MT-01 Ackermann Steering Mobile Robot",
+        "typeCategory": "阿克曼方向盘机器人(前轮)",
+        "purpose": "通用底盘供负载能力高,适应困难条件的客房和街道使用.",
+        "movementType": "前轮驱动,后轮驱动,阿克曼",
+        "navigation": "—",
+        "communicationProtocols": "RS-232, ROS",
+        "features": "独立暂停,标准化协议,快速二级开发,运动模式切换",
+        "sensors": "—",
+        "application": "后勤、仓库、建筑、研究、教育"
+      },
+      "applications": "后勤、仓库、建筑、研究、教育",
+      "features": [
+        "独立暂停",
+        "标准化",
+        "二级快速发展",
+        "切换"
+      ]
+    },
+    "mt-04-pro": {
+      "name": "MT-04 Pro",
+      "category": "机器人们",
+      "description": "",
+      "specifications": {
+        "series": "MT",
+        "fullName": "MT-04 Pro Ackermann Steering Mobile Robot",
+        "typeCategory": "阿克曼方向盘机器人(前轮)",
+        "purpose": "高速机器人增载能力 高速运输大型载荷.",
+        "movementType": "前轮驱动,后轮驱动,阿克曼",
+        "navigation": "3D SLAM激光导航,RTK导航",
+        "communicationProtocols": "CAN, ROS/Ubuntu",
+        "features": "超过8厘米,无载荷地抬起20°",
+        "sensors": "16行3D LiDAR,RTK模块,深度相机,IMU,保险杠,工业计算机",
+        "application": "仓库后勤、建筑、研发、自主驾驶"
+      },
+      "applications": "仓库后勤、建筑、研发、自主驾驶",
+      "features": [
+        "克服8厘米以下的障碍",
+        "起飞"
+      ]
+    },
+    "et-01": {
+      "name": "ET-01",
+      "category": "机器人们",
+      "description": "",
+      "specifications": {
+        "series": "MT",
+        "fullName": "ET-01 Ackermann Steering Mobile Robot",
+        "typeCategory": "阿克曼方向盘机器人(前轮)",
+        "purpose": "用于运输中型货物的高速机器人.",
+        "movementType": "前轮驱动,后轮驱动,阿克曼",
+        "navigation": "—",
+        "communicationProtocols": "RS-232, ROS",
+        "features": "最大速度为 5 m/s, 独立悬浮",
+        "sensors": "—",
+        "application": "高速物流、测试、研发"
+      },
+      "applications": "高速物流、测试、研发",
+      "features": [
+        "最高速度 5 m/s",
+        "暂停"
+      ]
+    },
+    "ht-01-mini": {
+      "name": "HT-01 Mini",
+      "category": "机器人们",
+      "description": "",
+      "specifications": {
+        "series": "HT",
+        "fullName": "HT-01 Mini Omnidirectional Mobile Robot",
+        "typeCategory": "四轮全向机器人",
+        "purpose": "用于定位精度较高的狭小空间的可压缩机动机器人.",
+        "movementType": "四轮驱动,全向底盘",
+        "navigation": "2D SLAM 导弹 激光导航",
+        "communicationProtocols": "ROS/Ubuntu, MQTT",
+        "features": "旋转到位,横向移动,滑动,阿克曼模式,人工/自动充电",
+        "sensors": "2D LiDAR, IMU, 工业路由器",
+        "application": "仓库后勤、研究、教育、农业、狭窄通道"
+      },
+      "applications": "仓库后勤、研究、教育、农业、狭窄通道",
+      "features": [
+        "轮调到位",
+        "侧面",
+        "滑动",
+        "阿克曼政权",
+        "手工充电"
+      ]
+    },
+    "ht-01": {
+      "name": "HT-01",
+      "category": "机器人们",
+      "description": "",
+      "specifications": {
+        "series": "HT",
+        "fullName": "HT-01 Omnidirectional Mobile Robot",
+        "typeCategory": "四轮全向机器人",
+        "purpose": "物流和教育方面的标准全方位定向机器人.",
+        "movementType": "四轮驱动,全向底盘",
+        "navigation": "3D SLAM 激光导航",
+        "communicationProtocols": "ROS/Ubuntu, MQTT, Modbus TCP",
+        "features": "3D绘图,攀登20°,克服障碍8厘米,在狭窄的通道中航行(1米)",
+        "sensors": "3D LiDAR、IMU、保险杠、工业路由器、照相机",
+        "application": "仓库、后勤、研究、教育、公园、校园"
+      },
+      "applications": "仓库、后勤、研究、教育、公园、校园",
+      "features": [
+        "3D 绘图",
+        "20°",
+        "克服障碍 8厘米",
+        "窄通道导航(1米)"
+      ]
+    },
+    "ht-01-max": {
+      "name": "HT-01 MAX",
+      "category": "机器人们",
+      "description": "",
+      "specifications": {
+        "series": "HT",
+        "fullName": "HT-01 MAX Omnidirectional Mobile Robot",
+        "typeCategory": "四轮全向机器人",
+        "purpose": "最大负载容量机器人,具有全方位定向运动.",
+        "movementType": "四轮驱动,全向底盘",
+        "navigation": "—",
+        "communicationProtocols": "ROS",
+        "features": "HT 系列最大尺寸, 移动",
+        "sensors": "—",
+        "application": "大型仓库、后勤中心"
+      },
+      "applications": "大型仓库、后勤中心",
+      "features": [
+        "HT 系列的最大尺寸",
+        "杂乱无章"
+      ]
+    },
+    "ht-02": {
+      "name": "HT-02",
+      "category": "机器人们",
+      "description": "",
+      "specifications": {
+        "series": "HT",
+        "fullName": "HT-02 Omnidirectional Mobile Robot",
+        "typeCategory": "四轮全向机器人",
+        "purpose": "机器人增加了承担重型后勤任务的能力.",
+        "movementType": "四轮驱动,全向底盘",
+        "navigation": "—",
+        "communicationProtocols": "ROS",
+        "features": "240公斤负载能力,全面移动",
+        "sensors": "—",
+        "application": "重型仓库后勤"
+      },
+      "applications": "重型仓库后勤",
+      "features": [
+        "容量240公斤",
+        "杂乱无章"
+      ]
+    },
+    "ht-03": {
+      "name": "HT-03",
+      "category": "机器人们",
+      "description": "",
+      "specifications": {
+        "series": "HT",
+        "fullName": "HT-03 Omnidirectional Mobile Robot",
+        "typeCategory": "四轮全向机器人",
+        "purpose": "散装货物的HT系列最大装载能力.",
+        "movementType": "四轮驱动,全向底盘",
+        "navigation": "—",
+        "communicationProtocols": "ROS",
+        "features": "最大负载能力300公斤,全面移动",
+        "sensors": "—",
+        "application": "重工业物流,生产线"
+      },
+      "applications": "重工业物流,生产线",
+      "features": [
+        "最大负荷300公斤",
+        "杂乱无章"
+      ]
+    },
+    "gt-01-mini": {
+      "name": "GT-01 Mini",
+      "category": "机器人们",
+      "description": "",
+      "specifications": {
+        "series": "GT",
+        "fullName": "GT-01 Mini Track-Driven Mobile Robot",
+        "typeCategory": "毛虫鱼",
+        "purpose": "紧凑农业,林业,矿业,建筑工地的全地形车辆.",
+        "movementType": "卡特彼勒驱动器、差分、旋转到位",
+        "navigation": "—",
+        "communicationProtocols": "RS-232, ROS",
+        "features": "在粗糙地形上自动充电、高可通行性",
+        "sensors": "—",
+        "application": "农业、牧场、林业、采矿、建筑"
+      },
+      "applications": "农业、牧场、林业、采矿、建筑",
+      "features": [
+        "自动充电",
+        "跨国"
+      ]
+    },
+    "gt-01": {
+      "name": "GT-01",
+      "category": "机器人们",
+      "description": "",
+      "specifications": {
+        "series": "GT",
+        "fullName": "GT-01 Track-Driven Mobile Robot",
+        "typeCategory": "毛虫鱼",
+        "purpose": "标准履带机器人用于越野作业和农业.",
+        "movementType": "卡特彼勒驱动器、差分、旋转到位",
+        "navigation": "RTK 高精确度导航",
+        "communicationProtocols": "RS-232, ROS, MQTT, Modbus TCP",
+        "features": "RTK 导航、线路规划、动态障碍避让、自动充电",
+        "sensors": "LiDAR,RTK模块",
+        "application": "农业、园艺、农场、温室、越野经营"
+      },
+      "applications": "农业、园艺、农场、温室、越野经营",
+      "features": [
+        "RTK 导航",
+        "路线规划",
+        "动态撤销",
+        "充电"
+      ]
+    },
+    "gt-02": {
+      "name": "GT-02",
+      "category": "机器人们",
+      "description": "",
+      "specifications": {
+        "series": "GT",
+        "fullName": "GT-02 Track-Driven Mobile Robot",
+        "typeCategory": "毛虫鱼",
+        "purpose": "重型履带机器人,在困难条件下用于大宗货物.",
+        "movementType": "卡特彼勒驱动器、差分、旋转到位",
+        "navigation": "—",
+        "communicationProtocols": "RS-232, ROS",
+        "features": "电池容量增加(60 Ah),可通行性高",
+        "sensors": "—",
+        "application": "大农场、建筑工地、采矿业"
+      },
+      "applications": "大农场、建筑工地、采矿业",
+      "features": [
+        "电池容量增加(60 Ah)",
+        "跨国"
+      ]
+    },
+    "mk-01": {
+      "name": "MK-01",
+      "category": "机器人们",
+      "description": "",
+      "specifications": {
+        "series": "Специализированные",
+        "fullName": "MK-01 Mecanum Wheel Omnidirectional Robot",
+        "typeCategory": "带有轮子的机器人 Mecanum(全方向)",
+        "purpose": "有轮子的机器人 甲卡努姆用于平面,并设有旋转.",
+        "movementType": "圆顶轮,全向,旋转到位",
+        "navigation": "2D SLAM 导弹",
+        "communicationProtocols": "RS-232, ROS, MQTT, Modbus TCP",
+        "features": "自动充电,绘图最高可达10万平方米,高机动性",
+        "sensors": "2D LiDAR、IMU、工业路由器、导航雷达、充电站",
+        "application": "后勤、仓库、服务机器人、保健、教育"
+      },
+      "applications": "后勤、仓库、服务机器人、保健、教育",
+      "features": [
+        "自动充电",
+        "绘制最多100 000平方米的地图",
+        "可操作性"
+      ]
+    },
+    "searobot-01": {
+      "name": "SeaRobot-01",
+      "category": "机器人们",
+      "description": "",
+      "specifications": {
+        "series": "Специализированные",
+        "fullName": "SeaRobot-01 Outdoor All-Terrain Mobile Robot",
+        "typeCategory": "四轮全地形车,供房间和街道使用",
+        "purpose": "一个用于公园巡逻,农业,越野作业的全地形机器人.",
+        "movementType": "四轮驱动,现场旋转支持",
+        "navigation": "3D SLAM 激光导航",
+        "communicationProtocols": "ROS, MQTT, Modbus TCP",
+        "features": "3D绘图、PTZ监测、自动充电、10万平方米的绘图",
+        "sensors": "3D LiDAR、PTZ相机、转弯指示器、照明、碰撞防护",
+        "application": "越野巡逻、农业、公园、领土检查"
+      },
+      "applications": "越野巡逻、农业、公园、领土检查",
+      "features": [
+        "3D 绘图",
+        "PTZ监测",
+        "充电",
+        "绘制最多100 000平方米的地图"
+      ]
+    },
+    "gt-01-r300-(rtk)": {
+      "name": "GT-01 R300 (RTK)",
+      "category": "机器人们",
+      "description": "",
+      "specifications": {
+        "series": "Специализированные",
+        "fullName": "GT-01 R300 Outdoor All-Terrain RTK Navigation Robot",
+        "typeCategory": "带RTK导航的卡特彼勒机器人",
+        "purpose": "具有高精度RTK导航功能的农业和园艺多功能交通平台.",
+        "movementType": "卡特彼勒驱动器",
+        "navigation": "RTK 高精度导航",
+        "communicationProtocols": "MQTT, Modbus TCP",
+        "features": "RTK 精确导航,点对点路径规划,动态障碍避免,低收费自动充电",
+        "sensors": "RTK模块,LiDAR,运动控制系统,发动机驱动器,履带底盘",
+        "application": "农业、园艺、农场、温室、大型越野场景"
+      },
+      "applications": "农业、园艺、农场、温室、大型越野场景",
+      "features": [
+        "RTK 精确导航",
+        "点对点规划",
+        "动态撤销",
+        "低收费"
+      ]
+    },
+    "gt-01-u300": {
+      "name": "GT-01 U300",
+      "category": "机器人们",
+      "description": "",
+      "specifications": {
+        "series": "Специализированные",
+        "fullName": "GT-01 U300 Intelligent Following Tracked Transporter",
+        "typeCategory": "具有自动后续功能的毛虫机器人",
+        "purpose": "具有跟踪操作员进行人与机器人协作功能的智能运输机.",
+        "movementType": "以两台无刷伺服器驱动",
+        "navigation": "自动跟随",
+        "communicationProtocols": "—",
+        "features": "自动跟踪技术,远程双控,超音速障碍避让,全天候操作(IP65),防水毛虫,功能模块扩展",
+        "sensors": "车辆跟踪模块、手动标记控制器、超声波传感器、溶液管理系统",
+        "application": "果园、园艺、农场、温室、人机联合方案(收获与运输)"
+      },
+      "applications": "果园、园艺、农场、温室、人机联合方案(收获与运输)",
+      "features": [
+        "自动后续技术",
+        "远程控制",
+        "超音速撤销",
+        "全天候作业(IP65)",
+        "防水毛虫",
+        "模块"
+      ]
+    }
+  },
+  "catalog": {
+    "title": "完整的产品目录",
+    "subtitle": "我们所有机器人解决方案",
+    "filter": {
+      "all": "所有职类",
+      "search": "按名称搜索."
+    },
+    "noProducts": "未找到产品 ",
+    "noDescription": "缺少说明",
+    "pagination": {
+      "total": "货物总数"
+    }
+  },
+  "productDetail": {
+    "specifications": "技术规格",
+    "description": "说明",
+    "applications": "应用程序",
+    "features": "特征",
+    "backToProducts": "回目录",
+    "contact": "联系我们",
+    "notFound": "没有找到产品 ",
+    "mainImage": "主图像",
+    "detailsImage": "详细图像"
+  },
+  "contacts": {
+    "title": "联系方式",
+    "subtitle": "联系我们进行协商",
+    "companyName": "彗星前进智能科技有限公司.",
+    "companyDescription": "成立于2023年的彗星前进智能科技有限公司从事一系列移动机器人的技术开发和编程. 我们的团队在工业领域有十多年的研发经验,重点是设计有线智能机器人,智能运动控制以及室内室外情景的独立创新技术. 我国产品范围覆盖新型动力驱动车辆,先进无人驾驶机器人,智能机器人检查员,自主运载机器人和工业运输无人驾驶车辆的标准平台. 这些技术广泛应用于教育,检查,制造厂和停车场分配等各个领域. 我们不仅提供标准产品,还开发基于机器人操作系统的定制创新解决方案,以满足各种实际客户需求.",
+    "russia": {
+      "title": "驻俄罗斯代表",
+      "countryCode": "俄罗斯联邦",
+      "phoneOffice": "+7 (499) 4031-888",
+      "phoneMessengers": "+7 (925) 4031-888",
+      "messengersLabel": "WhatsApp / 电报",
+      "address": "俄罗斯 莫斯科 默兹利亚科夫斯基巷 15 PM 23",
+      "email": "mail@nihao.su",
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.5384259949544!2d37.58909177679326!3d55.75863898993544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a378e7e8e21%3A0x7e3d1d1d1d1d1d1d!2z0JzQtdGA0LfQu9GP0LrQvtCy0YHQutC40Lkg0L_QtdGA0LXRg9C70L7Qug!5e0!3m2!1sru!2sru!4v1234567890123!5m2!1sru!2sru"
+    },
+    "kazakhstan": {
+      "title": "驻哈萨克斯坦代表",
+      "countryCode": "哈萨克斯坦",
+      "phoneOffice": "+7 (727) 3122-888",
+      "phoneMessengers": "+7 (771) 3122-888",
+      "messengersLabel": "WhatsApp / 电报",
+      "address": "哈萨克斯坦,阿拉木图,马卡塔耶娃圣,127/11",
+      "email": "mail@nihao.kz",
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2906.726287726287!2d76.94907576563988!3d43.238167799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDPCsDE0JzE3LjQiTiA3NsKwNTcnMDQuNiJF!5e0!3m2!1sru!2skz!4v1234567890123!5m2!1sru!2skz"
+    },
+    "china": {
+      "title": "驻华代表",
+      "countryCode": "中国",
+      "phoneOffice": "+86 132 66714-888",
+      "address": "中国深圳市富天区世贸A区",
+      "addressChinese": "深圳市福田区世界贸易广场A",
+      "email": "mail@hellosales.cn",
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.1234567890123!2d114.05678901234567!3d22.541234567890123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDMyJzI4LjQiTiAxMTTCsDAzJzI0LjQiRQ!5e0!3m2!1sru!2scn!4v1234567890123!5m2!1sru!2scn"
+    },
+    "phone": "电话",
+    "officeLabel": "办公室",
+    "email": "Электронная почта",
+    "address": "地址"
+  },
+  "footer": {
+    "about": "连队",
+    "products": "产品",
+    "contacts": "联系人",
+    "copyright": "2025 (英语). 版权所有",
+    "description": "生产创新的机器人解决方案",
+    "address": "中国深圳市富甸区世贸广场A号(QQA)",
+    "cta": {
+      "title": "联系我们",
+      "subtitle": "请求或咨询",
+      "button": "联系我"
+    }
+  },
+  "seo": {
+    "home": {
+      "title": "生产机器人 创新机器人解决方案",
+      "description": "为工业,物流和教育制造先进移动机器人. 无人机器人,机器人检查员,自主投递机器人.",
+      "keywords": "机器人制造 移动机器人 无人机器人 机器人检查员 送货机器人 工业机器人 UGV AMR 购买机器人"
+    },
+    "products": {
+      "title": "机器人目录 生产机器人",
+      "description": "多种机器人解决方案:AMR,CMR,无人驾驶飞行器,用于巡逻和运送的机器人. 技术规格和价格.",
+      "keywords": "机器人目录 购买机器人 AMR机器人 CMR机器人 机器人价格 工业机器人 物流机器人"
+    },
+    "catalog": {
+      "title": "机器人全目录 生产机器人",
+      "description": "全套机器人解决方案:AMR,CMR,无人驾驶车辆,用于巡逻和运送的机器人. 技术规格和价格.",
+      "keywords": "机器人目录 购买机器人 AMR机器人 CMR机器人 机器人价格 工业机器人 物流机器人"
+    },
+    "contacts": {
+      "title": "机器人生产",
+      "description": "与我们联系,就机器人解决方案的选择和购买问题提出建议。 电话 电子邮件 机器人制造地址.",
+      "keywords": "机器人制造商的联系人 购买机器人 咨询机器人 生产机器人地址"
+    }
+  },
+  "productsData": {
+    "categories": {
+      "all": "机器人们"
+    },
+    "specificationLabels": {
+      "series": "Серия",
+      "fullName": "Полное название",
+      "typeCategory": "类型/类别",
+      "purpose": "任命",
+      "dimensions": "尺寸(WxW),毫米",
+      "weight": "重量,公斤",
+      "maxSpeed": "最高速度, m/s",
+      "payload": "装载能力,公斤",
+      "workingTime": "工作时间,h",
+      "batteryVoltage": "ACB 电压,B",
+      "batteryCapacity": "ACB的能力,Ah",
+      "movementType": "移动类型",
+      "navigation": "导航",
+      "positioningAccuracy": "定位精确度",
+      "communicationProtocols": "通信协议",
+      "protectionDegree": "保护程度",
+      "operatingTemperature": "操作温度,°C",
+      "features": "特征",
+      "sensors": "感应者",
+      "application": "应用程序"
+    }
+  },
+  "specificationLabels": {
+    "series": "系列",
+    "fullName": "全名",
+    "typeCategory": "类型/类别",
+    "purpose": "任命",
+    "dimensions": "尺寸(WxW),毫米",
+    "weight": "重量,公斤",
+    "maxSpeed": "最高速度, m/s",
+    "payload": "装载能力,公斤",
+    "workingTime": "工作时间,h",
+    "batteryVoltage": "ACB 电压,B",
+    "batteryCapacity": "ACB的能力,Ah",
+    "movementType": "移动类型",
+    "navigation": "导航",
+    "positioningAccuracy": "定位精确度",
+    "communicationProtocols": "通信协议",
+    "protectionDegree": "保护程度",
+    "operatingTemperature": "操作温度,°C",
+    "features": "特征",
+    "sensors": "感应者",
+    "application": "应用程序"
+  }
+}

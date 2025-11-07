@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 import { ArrowRightOutlined, SearchOutlined } from '@ant-design/icons';
 import { AnimatePresence, motion } from 'framer-motion';
-import productsData from '../data/products.json';
+import { getProducts, type Product } from '../utils/products';
 import SEO from '../components/SEO';
 import AnimatedStarryBackground from '../components/AnimatedStarryBackground';
 import './CatalogPage.css';
@@ -14,18 +14,6 @@ const { Title, Paragraph } = Typography;
 const ITEMS_PER_PAGE = 5;
 const SEARCH_DELAY = 500;
 
-interface Product {
-  id: string;
-  name: string;
-  category: string;
-  description: string;
-  specifications?: Record<string, string>;
-  images: {
-    main: string;
-    details: string;
-  };
-}
-
 const CatalogPage = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
@@ -34,7 +22,7 @@ const CatalogPage = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const productsGridRef = useRef<HTMLDivElement>(null);
 
-  const products = productsData as Product[];
+  const products = getProducts(t);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -73,7 +61,7 @@ const CatalogPage = () => {
   };
 
   const getProductDescription = (product: Product): string => {
-    return product.specifications?.['Назначение'] || 'Описание отсутствует';
+    return product.specifications?.['purpose'] || t('catalog.noDescription');
   };
 
   return (
@@ -146,7 +134,7 @@ const CatalogPage = () => {
                                 alt={product.name}
                                 className="featured-product-image"
                                 onError={(e) => {
-                                  e.currentTarget.src = '/public/main_hero.png';
+                                  e.currentTarget.src = '/main_hero.png';
                                 }}
                               />
                             </div>

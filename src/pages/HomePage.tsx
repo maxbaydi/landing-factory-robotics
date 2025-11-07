@@ -20,7 +20,7 @@ import {
 import SEO from '../components/SEO';
 import SchemaOrg from '../components/SchemaOrg';
 import AnimatedStarryBackground from '../components/AnimatedStarryBackground';
-import productsData from '../data/products.json';
+import { getProducts } from '../utils/products';
 import './HomePage.css';
 
 const { Title, Paragraph } = Typography;
@@ -31,6 +31,7 @@ const HomePage = () => {
   const galleryTrackRef = useRef<HTMLDivElement>(null);
   const [isPaused, setIsPaused] = useState(false);
 
+  const productsData = getProducts(t);
   const featuredProducts = productsData.slice(0, 8);
   
   const featuredProductIds = ['dt-01-pro', 'pt-03', 'ht-01', 'gt-01', 'mt-04-pro', 'ht-02'];
@@ -180,7 +181,7 @@ const HomePage = () => {
       <SchemaOrg
         type="Organization"
         data={{
-          name: 'Comet Forward Intelligent Technology',
+          name: t('contacts.companyName'),
           url: window.location.origin,
           description: t('home.about.description'),
           telephone: '+7 (XXX) XXX-XX-XX',
@@ -195,7 +196,7 @@ const HomePage = () => {
         <section className="hero-section">
           <AnimatedStarryBackground />
           <div className="hero-background-image">
-            <img src="/public/main_hero.png" alt="Robots Background" />
+            <img src="/main_hero.png" alt="Robots Background" />
           </div>
           <div className="hero-gradient-overlay"></div>
           
@@ -212,8 +213,8 @@ const HomePage = () => {
               <div className="hero-company-brand">
                 <img src="/logo.png" alt="Comet Forward" className="hero-company-logo" />
                 <div className="hero-company-info">
-                  <h2 className="hero-company-name-chinese">慧行智能科技</h2>
-                  <p className="hero-company-name-english">Comet Forward Intelligent Technology Co., Ltd.</p>
+                  <h2 className="hero-company-name-chinese">{t('home.hero.companyNameChinese')}</h2>
+                  <p className="hero-company-name-english">{t('contacts.companyName')}</p>
                 </div>
               </div>
               
@@ -226,14 +227,14 @@ const HomePage = () => {
                   <RobotOutlined className="hero-stat-icon" />
                   <div className="hero-stat-content">
                     <h3>20+</h3>
-                    <p>моделей роботов</p>
+                    <p>{t('home.hero.stats.products')}</p>
                   </div>
                 </div>
                 <div className="hero-stat">
                   <RocketOutlined className="hero-stat-icon" />
                   <div className="hero-stat-content">
                     <h3>10+</h3>
-                    <p>лет опыта</p>
+                    <p>{t('home.hero.stats.experience')}</p>
                   </div>
                 </div>
               </div>
@@ -285,7 +286,7 @@ const HomePage = () => {
                         {product.name}
                       </Title>
                       <Paragraph className="product-card-description">
-                        {product.specifications['Назначение'] || product.specifications['Тип/Категория']}
+                        {product.specifications?.['purpose'] || product.specifications?.['typeCategory']}
                       </Paragraph>
                       <Button className="product-card-button">
                         {t('featured.viewDetails')}
@@ -302,7 +303,7 @@ const HomePage = () => {
           <div className="container">
             <div className="info-section-with-image">
               <div className="info-section-image">
-                <img src="/public/инновационная мастерская (1).png" alt="Innovation" />
+                <img src="/инновационная мастерская (1).png" alt="Innovation" />
               </div>
               <div className="info-section-content">
                 <Title level={2} className="info-section-title gradient-text">
@@ -326,7 +327,7 @@ const HomePage = () => {
 
             <div className="info-section-with-image info-section-reverse">
               <div className="info-section-image">
-                <img src="/public/демонстрационный стенд (1).png" alt="Applications" />
+                <img src="/демонстрационный стенд (1).png" alt="Applications" />
               </div>
               <div className="info-section-content">
                 <Title level={2} className="info-section-title gradient-text">
@@ -350,7 +351,7 @@ const HomePage = () => {
 
             <div className="info-section-with-image">
               <div className="info-section-image">
-                <img src="/public/инновационная мастерская (3).png" alt="Technologies" />
+                <img src="/инновационная мастерская (3).png" alt="Technologies" />
               </div>
               <div className="info-section-content">
                 <Title level={2} className="info-section-title gradient-text">
@@ -398,7 +399,7 @@ const HomePage = () => {
                             alt={product.name}
                             className="featured-product-image"
                             onError={(e) => {
-                              e.currentTarget.src = '/public/main_hero.png';
+                              e.currentTarget.src = '/main_hero.png';
                             }}
                           />
                         </div>
@@ -408,7 +409,7 @@ const HomePage = () => {
                             {product.name}
                           </Title>
                           <Paragraph className="featured-description" ellipsis={{ rows: 2 }}>
-                            {product.description || `Категория: ${product.category}`}
+                            {product.description || product.category}
                           </Paragraph>
                           <Button 
                             type="primary" 
@@ -437,7 +438,7 @@ const HomePage = () => {
                               alt={product.name}
                               className="featured-product-image"
                               onError={(e) => {
-                                e.currentTarget.src = '/public/main_hero.png';
+                                e.currentTarget.src = '/main_hero.png';
                               }}
                             />
                           </div>
@@ -447,7 +448,7 @@ const HomePage = () => {
                               {product.name}
                             </Title>
                             <Paragraph className="featured-description" ellipsis={{ rows: 2 }}>
-                              {product.description || `Категория: ${product.category}`}
+                              {product.description || product.category}
                             </Paragraph>
                             <Button 
                               type="primary" 
@@ -529,7 +530,7 @@ const HomePage = () => {
                   {[1, 2, 3, 4].map((num) => (
                     <div key={num} className="workshop-image-wrapper">
                       <Image
-                        src={`/public/демонстрационный стенд (${num}).png`}
+                        src={`/демонстрационный стенд (${num}).png`}
                         alt={`${t('home.workshops.display.title')} ${num}`}
                         className="workshop-image"
                       />
@@ -548,7 +549,7 @@ const HomePage = () => {
                   {[1, 2, 3, 4].map((num) => (
                     <div key={num} className="workshop-image-wrapper">
                       <Image
-                        src={`/public/инновационная мастерская (${num}).png`}
+                        src={`/инновационная мастерская (${num}).png`}
                         alt={`${t('home.workshops.innovation.title')} ${num}`}
                         className="workshop-image"
                       />
