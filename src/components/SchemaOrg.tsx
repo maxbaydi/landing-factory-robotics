@@ -74,3 +74,4 @@ const SchemaOrg = ({ type, data }: SchemaOrgProps) => {
 
 export default SchemaOrg;
 
+

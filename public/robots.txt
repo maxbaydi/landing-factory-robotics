@@ -6,3 +6,4 @@ Allow: /
 
 Sitemap: https://yoursite.com/sitemap.xml
 
+

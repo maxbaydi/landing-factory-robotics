@@ -3,41 +3,55 @@ import {
   PhoneOutlined,
   MailOutlined,
   EnvironmentOutlined,
-  ClockCircleOutlined,
+  WhatsAppOutlined,
 } from '@ant-design/icons';
 import { useTranslation } from 'react-i18next';
 import SEO from '../components/SEO';
+import AnimatedStarryBackground from '../components/AnimatedStarryBackground';
 import './ContactsPage.css';
 
 const { Title, Paragraph, Text } = Typography;
 
+interface RepresentativeData {
+  title: string;
+  phoneOffice: string;
+  phoneMessengers?: string;
+  messengersLabel?: string;
+  address: string;
+  addressChinese?: string;
+  email: string;
+  mapUrl: string;
+}
+
 const ContactsPage = () => {
   const { t } = useTranslation();
 
-  const contactItems = [
+  const representatives: RepresentativeData[] = [
     {
-      icon: <PhoneOutlined />,
-      title: t('contacts.phone'),
-      content: t('contacts.phonePlaceholder'),
-      color: '#00D9FF',
+      title: t('contacts.russia.title'),
+      phoneOffice: t('contacts.russia.phoneOffice'),
+      phoneMessengers: t('contacts.russia.phoneMessengers'),
+      messengersLabel: t('contacts.russia.messengersLabel'),
+      address: t('contacts.russia.address'),
+      email: t('contacts.russia.email'),
+      mapUrl: t('contacts.russia.mapUrl'),
     },
     {
-      icon: <MailOutlined />,
-      title: t('contacts.email'),
-      content: t('contacts.emailPlaceholder'),
-      color: '#0066FF',
+      title: t('contacts.kazakhstan.title'),
+      phoneOffice: t('contacts.kazakhstan.phoneOffice'),
+      phoneMessengers: t('contacts.kazakhstan.phoneMessengers'),
+      messengersLabel: t('contacts.kazakhstan.messengersLabel'),
+      address: t('contacts.kazakhstan.address'),
+      email: t('contacts.kazakhstan.email'),
+      mapUrl: t('contacts.kazakhstan.mapUrl'),
     },
     {
-      icon: <EnvironmentOutlined />,
-      title: t('contacts.address'),
-      content: t('contacts.addressPlaceholder'),
-      color: '#00D9FF',
-    },
-    {
-      icon: <ClockCircleOutlined />,
-      title: t('contacts.workHours'),
-      content: t('contacts.workHoursText'),
-      color: '#0066FF',
+      title: t('contacts.china.title'),
+      phoneOffice: t('contacts.china.phoneOffice'),
+      address: t('contacts.china.address'),
+      addressChinese: t('contacts.china.addressChinese'),
+      email: t('contacts.china.email'),
+      mapUrl: t('contacts.china.mapUrl'),
     },
   ];
 
@@ -51,6 +65,7 @@ const ContactsPage = () => {
 
       <div className="contacts-page">
         <div className="contacts-header-container">
+          <AnimatedStarryBackground />
           <div className="container">
             <Title level={1} className="page-title">
               {t('contacts.title')}
@@ -62,46 +77,90 @@ const ContactsPage = () => {
         </div>
 
         <div className="container contacts-content">
-          <Row gutter={[48, 48]}>
-            {contactItems.map((item, index) => (
-              <Col xs={24} sm={12} lg={6} key={index}>
-                <Card className="contact-item-card card-hover">
-                  <div className="contact-item">
-                    <div className="contact-icon">{item.icon}</div>
-                    <div className="contact-text">
-                      <Text className="contact-title">{item.title}</Text>
-                      <Text className="contact-content">{item.content}</Text>
-                    </div>
-                  </div>
+          <Row gutter={[32, 32]} className="representatives-row">
+            {representatives.map((rep, index) => (
+              <Col xs={24} key={index}>
+                <Card className="representative-card">
+                  <Row gutter={32} align="stretch">
+                    <Col xs={24} lg={10}>
+                      <div className="contact-section">
+                        <Title level={3} className="representative-title">
+                          {rep.title}
+                        </Title>
+
+                        <div className="contact-info">
+                          <div className="contact-item">
+                            <PhoneOutlined className="contact-icon" />
+                            <div className="contact-details">
+                              <Text className="contact-label">
+                                {t('contacts.phone')} ({t('contacts.officeLabel')})
+                              </Text>
+                              <Text className="contact-value">{rep.phoneOffice}</Text>
+                            </div>
+                          </div>
+
+                          {rep.phoneMessengers && (
+                            <div className="contact-item">
+                              <WhatsAppOutlined className="contact-icon" />
+                              <div className="contact-details">
+                                <Text className="contact-label">
+                                  {rep.messengersLabel}
+                                </Text>
+                                <Text className="contact-value">
+                                  {rep.phoneMessengers}
+                                </Text>
+                              </div>
+                            </div>
+                          )}
+
+                          <div className="contact-item">
+                            <EnvironmentOutlined className="contact-icon" />
+                            <div className="contact-details">
+                              <Text className="contact-label">
+                                {t('contacts.address')}
+                              </Text>
+                              <Text className="contact-value">{rep.address}</Text>
+                              {rep.addressChinese && (
+                                <Text className="contact-value-chinese">
+                                  ({rep.addressChinese})
+                                </Text>
+                              )}
+                            </div>
+                          </div>
+
+                          <div className="contact-item">
+                            <MailOutlined className="contact-icon" />
+                            <div className="contact-details">
+                              <Text className="contact-label">
+                                {t('contacts.email')}
+                              </Text>
+                              <Text className="contact-value">
+                                <a href={`mailto:${rep.email}`}>{rep.email}</a>
+                              </Text>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </Col>
+
+                    <Col xs={24} lg={14}>
+                      <div className="map-container">
+                        <iframe
+                          src={rep.mapUrl}
+                          width="100%"
+                          height="100%"
+                          style={{ border: 0 }}
+                          allowFullScreen
+                          loading="lazy"
+                          referrerPolicy="no-referrer-when-downgrade"
+                          title={`Map ${rep.title}`}
+                        />
+                      </div>
+                    </Col>
+                  </Row>
                 </Card>
               </Col>
             ))}
-          </Row>
-
-          <Row gutter={[48, 48]} className="info-row">
-            <Col xs={24} lg={12}>
-              <Card className="company-info-card card-hover">
-                <Title level={4} className="info-title gradient-text">
-                  {t('contacts.companyPlaceholder')}
-                </Title>
-                <Paragraph className="info-text">
-                  {t('home.about.description')}
-                </Paragraph>
-              </Card>
-            </Col>
-            <Col xs={24} lg={12}>
-              <Card className="map-placeholder card-hover">
-                <div className="map-placeholder-content">
-                  <EnvironmentOutlined className="map-icon" />
-                  <Title level={4} className="map-title">
-                    Интерактивная карта
-                  </Title>
-                  <Paragraph className="map-description">
-                    Местоположение нашего офиса
-                  </Paragraph>
-                </div>
-              </Card>
-            </Col>
           </Row>
         </div>
       </div>

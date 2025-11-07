@@ -1,0 +1,67 @@
+.animated-starry-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    180deg,
+    rgba(168, 139, 255, 0.15) 0%,
+    rgba(200, 159, 255, 0.12) 30%,
+    rgba(124, 58, 237, 0.08) 60%,
+    rgba(164, 139, 255, 0.05) 90%,
+    transparent 100%
+  );
+  backdrop-filter: blur(80px);
+}
+
+.animated-starry-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+    ellipse at top,
+    rgba(200, 159, 255, 0.12) 0%,
+    rgba(168, 139, 255, 0.06) 30%,
+    transparent 70%
+  );
+  filter: blur(60px);
+  animation: pulse 8s ease-in-out infinite;
+}
+
+.stars-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(40px);
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.05);
+  }
+}
+
+@media (max-width: 768px) {
+  .animated-starry-background {
+    backdrop-filter: blur(60px);
+  }
+  
+  .stars-canvas {
+    filter: blur(30px);
+  }
+}
+

@@ -15,6 +15,7 @@ import { ArrowLeftOutlined, PhoneOutlined } from '@ant-design/icons';
 import productsData from '../data/products.json';
 import SEO from '../components/SEO';
 import SchemaOrg from '../components/SchemaOrg';
+import AnimatedStarryBackground from '../components/AnimatedStarryBackground';
 import './ProductDetailPage.css';
 
 const { Title, Paragraph } = Typography;
@@ -74,6 +75,20 @@ const ProductDetailPage = () => {
       />
 
       <div className="product-detail-page">
+        <div className="product-header-container">
+          <AnimatedStarryBackground />
+          <div className="container">
+            <Title level={1} className="product-hero-title">
+              {product.name}
+            </Title>
+            {product.category && (
+              <Paragraph className="product-hero-category">
+                {product.category}
+              </Paragraph>
+            )}
+          </div>
+        </div>
+
         <div className="container">
           <div className="breadcrumb-container">
             <Button

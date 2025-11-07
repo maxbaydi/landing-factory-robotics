@@ -1,5 +1,4 @@
 import { Layout, Row, Col, Typography, Button } from 'antd';
-import { RobotOutlined } from '@ant-design/icons';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import './Footer.css';
@@ -16,7 +15,7 @@ const Footer = () => {
         <Row gutter={[48, 48]} className="footer-main">
           <Col xs={24} sm={24} md={6} className="footer-brand-section">
             <div className="footer-logo">
-              <RobotOutlined />
+              <img src="/logo.png" alt="Comet Forward" className="footer-logo-image" />
               <Text className="footer-logo-text">COMET FORWARD</Text>
             </div>
             <Text className="footer-address">{t('footer.address')}</Text>

@@ -9,8 +9,8 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #000000;
-  color: #E0E0E0;
+  background: #F7F7F7;
+  color: #1A1A1A;
 }
 
 #root {
@@ -25,7 +25,7 @@ body {
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #E8DAFF 0%, #C89FFF 50%, #E8AFFF 100%);
+  background: linear-gradient(135deg, #7c3aed 0%, #a855f7 50%, #c084fc 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -34,13 +34,13 @@ body {
 .card-hover {
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   cursor: pointer;
-  border: 1px solid rgba(164, 139, 255, 0.1);
+  border: 1px solid rgba(164, 139, 255, 0.2);
 }
 
 .card-hover:hover {
   transform: translateY(-8px);
-  border-color: rgba(200, 159, 255, 0.5);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 40px rgba(200, 159, 255, 0.3);
+  border-color: rgba(124, 58, 237, 0.5);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1), 0 0 30px rgba(124, 58, 237, 0.15);
 }
 
 .animate-fade-in {
@@ -59,7 +59,7 @@ body {
 }
 
 .subtle-glow {
-  box-shadow: 0 0 60px rgba(200, 159, 255, 0.25);
+  box-shadow: 0 0 40px rgba(124, 58, 237, 0.15);
 }
 
 .neon-border {
@@ -77,15 +77,15 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #111111;
+  background: #EFEFEF;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #C89FFF 0%, #A48BFF 100%);
+  background: linear-gradient(180deg, #a855f7 0%, #7c3aed 100%);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, #E8AFFF 0%, #C89FFF 100%);
+  background: linear-gradient(180deg, #c084fc 0%, #a855f7 100%);
 }
 

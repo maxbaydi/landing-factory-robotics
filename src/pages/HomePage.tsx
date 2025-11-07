@@ -206,6 +206,15 @@ const HomePage = () => {
               <Title level={1} className="hero-title">
                 {t('home.hero.title')}
               </Title>
+              
+              <div className="hero-company-brand">
+                <img src="/logo.png" alt="Comet Forward" className="hero-company-logo" />
+                <div className="hero-company-info">
+                  <h2 className="hero-company-name-chinese">慧行智能科技</h2>
+                  <p className="hero-company-name-english">Comet Forward Intelligent Technology Co., Ltd.</p>
+                </div>
+              </div>
+              
               <Paragraph className="hero-subtitle">
                 {t('home.hero.subtitle')}
               </Paragraph>

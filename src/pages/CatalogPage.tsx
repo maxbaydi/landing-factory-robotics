@@ -6,6 +6,7 @@ import { ArrowRightOutlined, SearchOutlined } from '@ant-design/icons';
 import { AnimatePresence, motion } from 'framer-motion';
 import productsData from '../data/products.json';
 import SEO from '../components/SEO';
+import AnimatedStarryBackground from '../components/AnimatedStarryBackground';
 import './CatalogPage.css';
 
 const { Title, Paragraph } = Typography;
@@ -85,6 +86,7 @@ const CatalogPage = () => {
 
       <div className="products-page">
         <div className="products-header-container">
+          <AnimatedStarryBackground />
           <div className="container">
             <Title level={1} className="page-title">
               {t('catalog.title')}

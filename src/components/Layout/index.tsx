@@ -21,3 +21,4 @@ const AppLayout = ({ children }: LayoutProps) => {
 
 export default AppLayout;
 
+
