@@ -11,6 +11,10 @@
   background: #F7F7F7;
 }
 
+.hero-section .animated-starry-background {
+  display: none;
+}
+
 .hero-background-image {
   position: absolute;
   top: 0;
@@ -425,9 +429,14 @@
   margin-bottom: 0;
 }
 
+.info-section-reverse {
+  flex-direction: row-reverse;
+}
+
 .info-section-image {
   flex: 1;
   max-width: 700px;
+  min-width: 0;
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1), 0 0 50px rgba(124, 58, 237, 0.1);
@@ -441,6 +450,7 @@
 
 .info-section-content {
   flex: 1;
+  min-width: 0;
 }
 
 .info-section-title {
@@ -689,6 +699,14 @@
   border-radius: 12px;
   background: #5A4FF5;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.featured-view-button .anticon {
+  margin-left: 4px;
 }
 
 .featured-view-button:hover {
@@ -721,6 +739,9 @@
   z-index: 1;
   max-width: 700px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .cta-title {
@@ -747,6 +768,14 @@
   color: #5A4FF5;
   padding: 0 48px;
   border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.catalog-button .anticon {
+  margin-left: 4px;
 }
 
 .catalog-button:hover {
@@ -789,10 +818,13 @@
   .container {
     padding: 0 20px;
   }
-  .info-section-with-image {
-    flex-direction: column;
-    gap: 40px;
-  }
+.info-section-with-image {
+  flex-direction: column;
+  gap: 40px;
+}
+.info-section-with-image[style*="row-reverse"] {
+  flex-direction: column;
+}
   .info-section-image {
     max-width: 100%;
   }
@@ -823,6 +855,15 @@
 @media (max-width: 576px) {
   .hero-section {
     padding: 100px 0 60px;
+  }
+  .hero-section .animated-starry-background {
+    display: block;
+  }
+  .hero-background-image {
+    display: none;
+  }
+  .hero-gradient-overlay {
+    display: none;
   }
   .hero-title {
     font-size: 36px !important;
@@ -868,10 +909,26 @@
   }
   .info-section-title {
     font-size: 28px !important;
+    padding-top: 0;
+    order: 1;
   }
   .info-section-with-image {
     gap: 30px;
     margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+  }
+  .info-section-reverse {
+    flex-direction: column;
+  }
+  .info-section-with-image .info-section-content {
+    display: contents;
+  }
+  .info-section-with-image .info-section-image {
+    order: 2;
+  }
+  .info-section-with-image .info-section-list {
+    order: 3;
   }
   .info-section-list-item {
     padding: 16px;
@@ -909,6 +966,7 @@
   }
   .cta-subtitle {
     font-size: 16px;
+    padding: 0 20px;
   }
   .catalog-button {
     height: 50px;

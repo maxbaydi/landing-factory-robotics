@@ -108,7 +108,10 @@
 .catalog-pagination-wrapper {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-bottom: 40px;
+  flex-wrap: wrap;
+  gap: 16px;
 }
 
 .catalog-pagination-wrapper.bottom {
@@ -119,6 +122,9 @@
 .catalog-pagination {
   display: flex;
   gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .catalog-pagination .ant-pagination-item {
@@ -365,10 +371,22 @@
 
   .catalog-pagination-wrapper {
     margin-bottom: 32px;
+    flex-direction: column;
+    gap: 16px;
   }
 
   .catalog-pagination-wrapper.bottom {
     margin-top: 32px;
+  }
+
+  .catalog-pagination {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .catalog-pagination .ant-pagination-total-text {
+    width: 100%;
+    text-align: center;
   }
 
   .featured-image-wrapper {

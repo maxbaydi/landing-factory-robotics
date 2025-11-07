@@ -19,6 +19,7 @@ import {
 } from '@ant-design/icons';
 import SEO from '../components/SEO';
 import SchemaOrg from '../components/SchemaOrg';
+import AnimatedStarryBackground from '../components/AnimatedStarryBackground';
 import productsData from '../data/products.json';
 import './HomePage.css';
 
@@ -192,6 +193,7 @@ const HomePage = () => {
       
       <div className="home-page">
         <section className="hero-section">
+          <AnimatedStarryBackground />
           <div className="hero-background-image">
             <img src="/public/main_hero.png" alt="Robots Background" />
           </div>
@@ -322,7 +324,7 @@ const HomePage = () => {
               </div>
             </div>
 
-            <div className="info-section-with-image" style={{ flexDirection: 'row-reverse' }}>
+            <div className="info-section-with-image info-section-reverse">
               <div className="info-section-image">
                 <img src="/public/демонстрационный стенд (1).png" alt="Applications" />
               </div>
@@ -382,7 +384,7 @@ const HomePage = () => {
             </Paragraph>
 
             <div className="featured-products-grid">
-              <Row gutter={[32, 32]}>
+              <Row gutter={[{ xs: 16, sm: 24, md: 32 }, { xs: 24, sm: 32 }]}>
                 {topRowProducts.map((product) => (
                   <Col xs={24} sm={12} lg={8} key={product.id}>
                     <Card 
@@ -411,10 +413,10 @@ const HomePage = () => {
                           <Button 
                             type="primary" 
                             size="large"
-                            icon={<ArrowRightOutlined />}
                             className="featured-view-button"
                           >
                             {t('featured.viewDetails')}
+                            <ArrowRightOutlined />
                           </Button>
                         </div>
                       </div>
@@ -424,7 +426,7 @@ const HomePage = () => {
               </Row>
 
               <div className="bottom-row-wrapper">
-                <Row gutter={[32, 32]}>
+                <Row gutter={[{ xs: 16, sm: 24, md: 32 }, { xs: 24, sm: 32 }]}>
                   {bottomRowProducts.map((product) => (
                     <Col xs={24} sm={12} lg={8} key={product.id}>
                       <Card className="featured-product-card non-clickable">
@@ -450,10 +452,10 @@ const HomePage = () => {
                             <Button 
                               type="primary" 
                               size="large"
-                              icon={<ArrowRightOutlined />}
                               className="featured-view-button"
                             >
                               {t('featured.viewDetails')}
+                              <ArrowRightOutlined />
                             </Button>
                           </div>
                         </div>
@@ -477,9 +479,9 @@ const HomePage = () => {
                   size="large"
                   onClick={() => navigate('/catalog')}
                   className="catalog-button"
-                  icon={<ArrowRightOutlined />}
                 >
                   {t('featured.catalog.button')}
+                  <ArrowRightOutlined />
                 </Button>
               </div>
             </div>

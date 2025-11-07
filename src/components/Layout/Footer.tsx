@@ -12,18 +12,75 @@ const Footer = () => {
   return (
     <AntFooter className="site-footer">
       <div className="footer-content">
-        <Row gutter={[48, 48]} className="footer-main">
-          <Col xs={24} sm={24} md={6} className="footer-brand-section">
+        <Row gutter={[{ xs: 0, sm: 24, md: 32, lg: 48 }, { xs: 48, sm: 48 }]} className="footer-main">
+          <Col xs={24} sm={24} md={6} lg={6} className="footer-brand-section">
             <div className="footer-logo">
               <img src="/logo.png" alt="Comet Forward" className="footer-logo-image" />
               <Text className="footer-logo-text">COMET FORWARD</Text>
             </div>
-            <Text className="footer-address">{t('footer.address')}</Text>
+            <div className="footer-address-item">
+              <Text className="footer-address-country">{t('contacts.russia.title')}</Text>
+              <Text className="footer-address-text">{t('contacts.russia.address')}</Text>
+            </div>
+            <div className="footer-address-item">
+              <Text className="footer-address-country">{t('contacts.kazakhstan.title')}</Text>
+              <Text className="footer-address-text">{t('contacts.kazakhstan.address')}</Text>
+            </div>
+            <div className="footer-address-item">
+              <Text className="footer-address-country">{t('contacts.china.title')}</Text>
+              <Text className="footer-address-text">{t('contacts.china.address')}</Text>
+            </div>
           </Col>
 
-          <div className="footer-divider" />
+          <Col xs={24} sm={24} md={6} lg={6} className="footer-contacts-section">
+            <div className="footer-contact-item">
+              <Text className="footer-contact-country">РФ</Text>
+              <div className="footer-contact-detail">
+                <Text className="footer-contact-label">{t('contacts.phone')}</Text>
+                <a href={`tel:${t('contacts.russia.phoneOffice').replace(/[^0-9+]/g, '')}`} className="footer-contact-link">
+                  {t('contacts.russia.phoneOffice')}
+                </a>
+              </div>
+              <div className="footer-contact-detail">
+                <Text className="footer-contact-label">{t('contacts.email')}</Text>
+                <a href={`mailto:${t('contacts.russia.email')}`} className="footer-contact-link">
+                  {t('contacts.russia.email')}
+                </a>
+              </div>
+            </div>
+            <div className="footer-contact-item">
+              <Text className="footer-contact-country">Казахстан</Text>
+              <div className="footer-contact-detail">
+                <Text className="footer-contact-label">{t('contacts.phone')}</Text>
+                <a href={`tel:${t('contacts.kazakhstan.phoneOffice').replace(/[^0-9+]/g, '')}`} className="footer-contact-link">
+                  {t('contacts.kazakhstan.phoneOffice')}
+                </a>
+              </div>
+              <div className="footer-contact-detail">
+                <Text className="footer-contact-label">{t('contacts.email')}</Text>
+                <a href={`mailto:${t('contacts.kazakhstan.email')}`} className="footer-contact-link">
+                  {t('contacts.kazakhstan.email')}
+                </a>
+              </div>
+            </div>
+            <div className="footer-contact-item">
+              <Text className="footer-contact-country">Китай</Text>
+              <div className="footer-contact-detail">
+                <Text className="footer-contact-label">{t('contacts.phone')}</Text>
+                <a href={`tel:${t('contacts.china.phoneOffice').replace(/[^0-9+]/g, '')}`} className="footer-contact-link">
+                  {t('contacts.china.phoneOffice')}
+                </a>
+              </div>
+              <div className="footer-contact-detail">
+                <Text className="footer-contact-label">{t('contacts.email')}</Text>
+                <a href={`mailto:${t('contacts.china.email')}`} className="footer-contact-link">
+                  {t('contacts.china.email')}
+                </a>
+              </div>
+            </div>
+          </Col>
 
-          <Col xs={24} sm={24} md={6} className="footer-nav-section">
+          <Col xs={24} sm={24} md={6} lg={5} className="footer-nav-section">
             <div className="footer-links">
               <Link to="/" className="footer-link">
                 {t('nav.home')}
@@ -37,9 +94,7 @@ const Footer = () => {
             </div>
           </Col>
 
-          <div className="footer-divider" />
-
-          <Col xs={24} sm={24} md={10} className="footer-cta-section">
+          <Col xs={24} sm={24} md={6} lg={7} className="footer-cta-section">
             <div className="footer-cta">
               <Title level={4} className="footer-cta-title">
                 {t('footer.cta.title')}

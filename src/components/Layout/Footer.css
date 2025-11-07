@@ -10,6 +10,8 @@
   max-width: 1600px;
   margin: 0 auto;
   padding: 0 40px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .footer-main {
@@ -22,7 +24,78 @@
 .footer-brand-section {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 24px;
+}
+
+.footer-address-section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-left: 24px;
+}
+
+.footer-address-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.footer-address-country {
+  color: #A48BFF;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.footer-address-text {
+  color: #666666 !important;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.footer-contacts-section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-left: 24px;
+  border-left: 1px solid rgba(124, 58, 237, 0.2);
+}
+
+.footer-contact-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.footer-contact-country {
+  color: #A48BFF;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.footer-contact-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.footer-contact-label {
+  color: #999999 !important;
+  font-size: 11px;
+}
+
+.footer-contact-link {
+  color: #666666;
+  font-size: 13px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-contact-link:hover {
+  color: #1A1A1A;
 }
 
 .footer-logo {
@@ -65,6 +138,12 @@
 
 .footer-nav-section {
   padding-left: 24px;
+  border-left: 1px solid rgba(124, 58, 237, 0.2);
+}
+
+.footer-cta-section {
+  padding-left: 24px;
+  border-left: 1px solid rgba(124, 58, 237, 0.2);
 }
 
 .footer-links {
@@ -153,6 +232,12 @@
   }
 
   .footer-content {
+    padding: 0 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-content {
     padding: 0 20px;
   }
 
@@ -162,19 +247,18 @@
   }
 
   .footer-brand-section,
+  .footer-address-section,
+  .footer-contacts-section,
   .footer-nav-section,
   .footer-cta-section {
     width: 100%;
     padding-left: 0 !important;
     margin-bottom: 32px;
+    border-left: none !important;
   }
 
   .footer-cta-section {
     margin-bottom: 0;
-  }
-
-  .footer-divider {
-    display: none;
   }
 
   .footer-address {

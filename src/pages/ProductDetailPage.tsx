@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import {
@@ -20,6 +20,21 @@ import './ProductDetailPage.css';
 
 const { Title, Paragraph } = Typography;
 
+const useIsMobile = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 576);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 576);
+    };
+    
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  return isMobile;
+};
+
 interface Product {
   id: string;
   name: string;
@@ -39,6 +54,7 @@ const ProductDetailPage = () => {
   const navigate = useNavigate();
   const { t } = useTranslation();
   const [currentImage, setCurrentImage] = useState<'main' | 'details'>('main');
+  const isMobile = useIsMobile();
 
   const product = (productsData as Product[]).find((p) => p.id === id);
 
@@ -101,7 +117,7 @@ const ProductDetailPage = () => {
             </Button>
           </div>
 
-          <Row gutter={[64, 48]} className="product-detail-content">
+          <Row gutter={[{ xs: 0, sm: 24, md: 40, lg: 64 }, { xs: 32, sm: 40, md: 48 }]} className="product-detail-content">
             <Col xs={24} lg={14}>
               <div className="product-gallery">
                 <div className="main-image-wrapper card-hover">
@@ -188,7 +204,7 @@ const ProductDetailPage = () => {
               <Title level={3} className="specifications-title">
                 {t('productDetail.specifications')}
               </Title>
-              <Descriptions bordered layout="vertical" column={4}>
+              <Descriptions bordered layout="vertical" column={isMobile ? 2 : 4}>
                 {Object.entries(product.specifications).map(([key, value]) => (
                   <Descriptions.Item
                     key={key}

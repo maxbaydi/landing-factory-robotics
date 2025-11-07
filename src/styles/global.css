@@ -11,12 +11,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: #F7F7F7;
   color: #1A1A1A;
+  overflow-x: hidden;
 }
 
 #root {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 .futuristic-glow {
@@ -87,5 +89,13 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(180deg, #c084fc 0%, #a855f7 100%);
+}
+
+.ant-layout {
+  overflow-x: hidden;
+}
+
+.ant-layout-content {
+  overflow-x: hidden;
 }
 

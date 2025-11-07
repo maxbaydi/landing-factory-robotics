@@ -403,6 +403,17 @@
 
   .specifications-section {
     padding: 24px 16px;
+    overflow-x: visible;
+  }
+
+  .specifications-section .ant-descriptions {
+    overflow-x: visible;
+  }
+
+  .specifications-section .ant-descriptions-item-label,
+  .specifications-section .ant-descriptions-item-content {
+    padding: 12px 8px !important;
+    word-break: break-word;
   }
 
   .specifications-title {

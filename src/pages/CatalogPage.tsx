@@ -161,10 +161,10 @@ const CatalogPage = () => {
                               <Button 
                                 type="primary" 
                                 size="large"
-                                icon={<ArrowRightOutlined />}
                                 className="featured-view-button"
                               >
                                 {t('featured.viewDetails')}
+                                <ArrowRightOutlined />
                               </Button>
                             </div>
                           </div>

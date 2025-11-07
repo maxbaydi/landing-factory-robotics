@@ -77,11 +77,11 @@ const ContactsPage = () => {
         </div>
 
         <div className="container contacts-content">
-          <Row gutter={[32, 32]} className="representatives-row">
+          <Row gutter={[{ xs: 0, sm: 24, md: 32 }, { xs: 24, sm: 32 }]} className="representatives-row">
             {representatives.map((rep, index) => (
               <Col xs={24} key={index}>
                 <Card className="representative-card">
-                  <Row gutter={32} align="stretch">
+                  <Row gutter={{ xs: 0, sm: 24, md: 32 }} align="stretch">
                     <Col xs={24} lg={10}>
                       <div className="contact-section">
                         <Title level={3} className="representative-title">
