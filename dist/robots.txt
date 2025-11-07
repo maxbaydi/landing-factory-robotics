@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+User-agent: Yandex
+Allow: /
+
+Sitemap: https://yoursite.com/sitemap.xml
+
+

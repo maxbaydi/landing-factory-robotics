@@ -14,7 +14,7 @@ interface SmokeParticle {
 const AnimatedStarryBackground = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const particlesRef = useRef<SmokeParticle[]>([]);
-  const animationFrameRef = useRef<number>();
+  const animationFrameRef = useRef<number | undefined>(undefined);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -67,7 +67,6 @@ const AnimatedStarryBackground = () => {
           particle.size
         );
 
-        const color = `hsl(${particle.hue}, 70%, 70%)`;
         gradient.addColorStop(0, `hsla(${particle.hue}, 70%, 70%, ${particle.opacity})`);
         gradient.addColorStop(0.5, `hsla(${particle.hue + 10}, 65%, 65%, ${particle.opacity * 0.5})`);
         gradient.addColorStop(1, 'rgba(0, 0, 0, 0)');
