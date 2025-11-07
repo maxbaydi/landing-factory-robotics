@@ -9,10 +9,10 @@
   pointer-events: none;
   background: linear-gradient(
     180deg,
-    rgba(168, 139, 255, 0.15) 0%,
-    rgba(200, 159, 255, 0.12) 30%,
-    rgba(124, 58, 237, 0.08) 60%,
-    rgba(164, 139, 255, 0.05) 90%,
+    rgba(173, 216, 230, 0.15) 0%,
+    rgba(176, 224, 230, 0.12) 30%,
+    rgba(135, 206, 235, 0.08) 60%,
+    rgba(173, 216, 230, 0.05) 90%,
     transparent 100%
   );
   backdrop-filter: blur(80px);
@@ -27,8 +27,8 @@
   bottom: 0;
   background: radial-gradient(
     ellipse at top,
-    rgba(200, 159, 255, 0.12) 0%,
-    rgba(168, 139, 255, 0.06) 30%,
+    rgba(176, 224, 230, 0.12) 0%,
+    rgba(173, 216, 230, 0.06) 30%,
     transparent 70%
   );
   filter: blur(60px);

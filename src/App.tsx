@@ -5,20 +5,19 @@ import HomePage from './pages/HomePage';
 import CatalogPage from './pages/CatalogPage';
 import ProductDetailPage from './pages/ProductDetailPage';
 import ContactsPage from './pages/ContactsPage';
-import PageTransition from './components/PageTransition';
 
 const App = () => {
   const location = useLocation();
 
   return (
     <AppLayout>
-      <AnimatePresence mode="wait">
+      <AnimatePresence mode="sync">
         <Routes location={location} key={location.pathname}>
-          <Route path="/" element={<PageTransition><HomePage /></PageTransition>} />
-          <Route path="/products" element={<PageTransition><CatalogPage /></PageTransition>} />
-          <Route path="/catalog" element={<PageTransition><CatalogPage /></PageTransition>} />
-          <Route path="/products/:id" element={<PageTransition><ProductDetailPage /></PageTransition>} />
-          <Route path="/contacts" element={<PageTransition><ContactsPage /></PageTransition>} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/products" element={<CatalogPage />} />
+          <Route path="/catalog" element={<CatalogPage />} />
+          <Route path="/products/:id" element={<ProductDetailPage />} />
+          <Route path="/contacts" element={<ContactsPage />} />
         </Routes>
       </AnimatePresence>
     </AppLayout>

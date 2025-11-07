@@ -4,6 +4,6 @@ Allow: /
 User-agent: Yandex
 Allow: /
 
-Sitemap: https://yoursite.com/sitemap.xml
+Sitemap: https://roboxin.ru/sitemap.xml
 
 

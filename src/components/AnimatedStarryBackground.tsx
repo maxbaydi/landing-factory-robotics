@@ -41,7 +41,7 @@ const AnimatedStarryBackground = () => {
           speedX: (Math.random() - 0.5) * 0.3,
           speedY: (Math.random() - 0.5) * 0.3,
           opacity: Math.random() * 0.15 + 0.1,
-          hue: Math.random() * 40 + 250,
+          hue: Math.random() * 40 + 200,
         });
       }
     };
@@ -67,9 +67,9 @@ const AnimatedStarryBackground = () => {
           particle.size
         );
 
-        gradient.addColorStop(0, `hsla(${particle.hue}, 70%, 70%, ${particle.opacity})`);
-        gradient.addColorStop(0.5, `hsla(${particle.hue + 10}, 65%, 65%, ${particle.opacity * 0.5})`);
-        gradient.addColorStop(1, 'rgba(0, 0, 0, 0)');
+        gradient.addColorStop(0, `hsla(${particle.hue}, 70%, 85%, ${particle.opacity})`);
+        gradient.addColorStop(0.5, `hsla(${particle.hue + 10}, 65%, 90%, ${particle.opacity * 0.5})`);
+        gradient.addColorStop(1, 'rgba(255, 255, 255, 0)');
 
         ctx.fillStyle = gradient;
         ctx.beginPath();

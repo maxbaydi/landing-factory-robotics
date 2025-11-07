@@ -18,8 +18,8 @@ const pageVariants = {
 };
 
 const pageTransition = {
-  duration: 0.6,
-  ease: [0.42, 0, 0.58, 1] as const,
+  duration: 0.3,
+  ease: [0.22, 1, 0.36, 1] as const,
 };
 
 const PageTransition = ({ children }: PageTransitionProps) => {
@@ -30,6 +30,11 @@ const PageTransition = ({ children }: PageTransitionProps) => {
       exit="exit"
       variants={pageVariants}
       transition={pageTransition}
+      style={{
+        position: 'relative',
+        backgroundColor: '#ffffff',
+        width: '100%',
+      }}
     >
       {children}
     </motion.div>
